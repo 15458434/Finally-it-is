@@ -51,6 +51,7 @@
     activity.userInfo = @{@"state": _isHetAlWeekendLabel.stringValue};
     activity.eligibleForSearch = YES;
     self.userActivity = activity;
+    [self.userActivity becomeCurrent];
 }
 
 @end

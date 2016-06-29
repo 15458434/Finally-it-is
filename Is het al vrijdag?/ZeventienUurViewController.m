@@ -61,6 +61,7 @@
     activity.userInfo = @{@"state" : _isHetAlZeventienUurLabel.stringValue};
     activity.eligibleForSearch = YES;
     self.userActivity = activity;
+    [self.userActivity becomeCurrent];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
