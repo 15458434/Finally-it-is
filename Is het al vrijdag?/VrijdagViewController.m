@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  VrijdagViewController.m
 //  Is het al vrijdag?
 //
 //  Created by Mark Cornelisse on 28/06/16.
