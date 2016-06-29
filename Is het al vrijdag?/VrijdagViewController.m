@@ -54,6 +54,13 @@
     [super viewWillAppear];
     
     [self update];
+    
+    NSUserActivity *activity = [[NSUserActivity alloc] initWithActivityType:@"com.greenhair.ishetal.observe"];
+    activity.title = @"Is het al vrijdag";
+    activity.keywords = [NSSet setWithArray:@[@"is", @"het", @"al", @"vrijdag"]];
+    activity.userInfo = @{@"state": _isHetAlVrijdagLabel.stringValue};
+    activity.eligibleForSearch = YES;
+    self.userActivity = activity;
 }
 
 - (void)setRepresentedObject:(id)representedObject {
