@@ -23,10 +23,10 @@
     BOOL isHetAlWeekend = _dayController.isHetAlWeekend;
     if (isHetAlWeekend) {
         _isHetAlWeekendLabel.textColor = [NSColor greenColor];
-        _isHetAlWeekendLabel.stringValue = @"YES";
+        _isHetAlWeekendLabel.stringValue = @"JA";
     } else {
         _isHetAlWeekendLabel.textColor = [NSColor redColor];
-        _isHetAlWeekendLabel.stringValue = @"NO";
+        _isHetAlWeekendLabel.stringValue = @"NEE";
     }
 }
 

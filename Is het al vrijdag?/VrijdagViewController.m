@@ -26,10 +26,10 @@
     BOOL isHetAlVrijdag = _dayController.isHetAlVrijdag;
     if (isHetAlVrijdag) {
         _isHetAlVrijdagLabel.textColor = [NSColor greenColor];
-        _isHetAlVrijdagLabel.stringValue = @"YES";
+        _isHetAlVrijdagLabel.stringValue = @"JA";
     } else {
         _isHetAlVrijdagLabel.textColor = [NSColor redColor];
-        _isHetAlVrijdagLabel.stringValue = @"NO";
+        _isHetAlVrijdagLabel.stringValue = @"NEE";
     }
 }
 

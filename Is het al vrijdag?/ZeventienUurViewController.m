@@ -26,10 +26,10 @@
     BOOL isHetAlZeventienUur = _dayController.isHetAlZeventienUur;
     if (isHetAlZeventienUur) {
         _isHetAlZeventienUurLabel.textColor = [NSColor greenColor];
-        _isHetAlZeventienUurLabel.stringValue = @"YES";
+        _isHetAlZeventienUurLabel.stringValue = @"JA";
     } else {
         _isHetAlZeventienUurLabel.textColor = [NSColor redColor];
-        _isHetAlZeventienUurLabel.stringValue = @"NO";
+        _isHetAlZeventienUurLabel.stringValue = @"NEE";
     }
 }
 

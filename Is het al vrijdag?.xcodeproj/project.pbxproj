@@ -69,12 +69,7 @@
 				380490A41D23D86B00A0C31E /* Is het al vrijdag?.entitlements */,
 				3804907F1D231FD000A0C31E /* AppDelegate.h */,
 				380490801D231FD000A0C31E /* AppDelegate.m */,
-				380490A11D23D5B000A0C31E /* ZeventienUurViewController.h */,
-				380490A21D23D5B000A0C31E /* ZeventienUurViewController.m */,
-				380490851D231FD000A0C31E /* VrijdagViewController.h */,
-				380490861D231FD000A0C31E /* VrijdagViewController.m */,
-				3804909B1D2329C300A0C31E /* WeekendViewController.h */,
-				3804909C1D2329C300A0C31E /* WeekendViewController.m */,
+				380490A51D2407CF00A0C31E /* ViewControllers */,
 				380490931D2320A500A0C31E /* DayController.h */,
 				380490941D2320A500A0C31E /* DayController.m */,
 				380490881D231FD000A0C31E /* Assets.xcassets */,
@@ -91,6 +86,19 @@
 				380490831D231FD000A0C31E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		380490A51D2407CF00A0C31E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				380490A11D23D5B000A0C31E /* ZeventienUurViewController.h */,
+				380490A21D23D5B000A0C31E /* ZeventienUurViewController.m */,
+				380490851D231FD000A0C31E /* VrijdagViewController.h */,
+				380490861D231FD000A0C31E /* VrijdagViewController.m */,
+				3804909B1D2329C300A0C31E /* WeekendViewController.h */,
+				3804909C1D2329C300A0C31E /* WeekendViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +316,7 @@
 				380490921D231FD000A0C31E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
