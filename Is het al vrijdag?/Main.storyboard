@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
     <scenes>
@@ -617,7 +618,7 @@
                                         <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="arrangeInFront:" target="Ady-hI-5gd" id="DRN-fu-gQh"/>
+                                                <action selector="bringAllToFrontPressed:" target="Voe-Tx-rLC" id="yLy-of-7Mz"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -644,7 +645,7 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75.5" y="-438"/>
+            <point key="canvasLocation" x="75.5" y="2"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -657,50 +658,12 @@
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
-                        <segue destination="Nvn-oN-d2L" kind="relationship" relationship="window.shadowedContentViewController" id="h40-bv-heQ"/>
+                        <segue destination="sxJ-JQ-M7V" kind="relationship" relationship="window.shadowedContentViewController" id="e3d-mv-iHu"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="-199"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="SsM-Wv-RJO">
-            <objects>
-                <viewController id="Nvn-oN-d2L" sceneMemberID="viewController">
-                    <view key="view" id="W3I-Bn-dou">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <visualEffectView appearanceType="vibrantLight" blendingMode="behindWindow" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="gyz-0F-5pC">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                <subviews>
-                                    <containerView translatesAutoresizingMaskIntoConstraints="NO" id="2or-Ic-FZ0">
-                                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                        <connections>
-                                            <segue destination="sxJ-JQ-M7V" kind="embed" id="Jm0-Jv-W7y"/>
-                                        </connections>
-                                    </containerView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="2or-Ic-FZ0" secondAttribute="trailing" id="AUm-mB-or5"/>
-                                    <constraint firstItem="2or-Ic-FZ0" firstAttribute="top" secondItem="gyz-0F-5pC" secondAttribute="top" id="TQ1-fe-tyb"/>
-                                    <constraint firstAttribute="bottom" secondItem="2or-Ic-FZ0" secondAttribute="bottom" id="yz7-NT-uEH"/>
-                                    <constraint firstItem="2or-Ic-FZ0" firstAttribute="leading" secondItem="gyz-0F-5pC" secondAttribute="leading" id="zCM-WC-Jbw"/>
-                                </constraints>
-                            </visualEffectView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="gyz-0F-5pC" secondAttribute="trailing" id="My6-OY-1kf"/>
-                            <constraint firstItem="gyz-0F-5pC" firstAttribute="top" secondItem="W3I-Bn-dou" secondAttribute="top" id="Q8T-2j-99n"/>
-                            <constraint firstAttribute="bottom" secondItem="gyz-0F-5pC" secondAttribute="bottom" id="lar-Sc-tFP"/>
-                            <constraint firstItem="gyz-0F-5pC" firstAttribute="leading" secondItem="W3I-Bn-dou" secondAttribute="leading" id="xrA-mb-CvJ"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <customObject id="Ld2-sb-kra" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75" y="251"/>
+            <point key="canvasLocation" x="75" y="266"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="Yvw-oj-WLa">
@@ -735,10 +698,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <visualEffectView appearanceType="vibrantLight" blendingMode="behindWindow" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="p2f-Dn-2B9">
+                            <visualEffectView canDrawConcurrently="YES" appearanceType="vibrantLight" blendingMode="behindWindow" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="p2f-Dn-2B9">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5DL-Aa-JqI">
+                                    <textField canDrawConcurrently="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5DL-Aa-JqI">
                                         <rect key="frame" x="176" y="131" width="97" height="38"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hallo" id="iDV-Ey-Qz3">
                                             <font key="font" size="31" name="Raleway-Bold"/>
@@ -781,10 +744,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <visualEffectView appearanceType="vibrantLight" blendingMode="behindWindow" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="NrB-4e-PvW">
+                            <visualEffectView canDrawConcurrently="YES" appearanceType="vibrantLight" blendingMode="behindWindow" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="NrB-4e-PvW">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jkx-7c-8oV">
+                                    <textField canDrawConcurrently="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jkx-7c-8oV">
                                         <rect key="frame" x="176" y="131" width="97" height="38"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hallo" id="HzI-8Z-U42">
                                             <font key="font" size="31" name="Raleway-Bold"/>
@@ -827,10 +790,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <visualEffectView appearanceType="vibrantLight" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="dtf-hx-xoM">
+                            <visualEffectView canDrawConcurrently="YES" appearanceType="vibrantLight" blendingMode="behindWindow" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="dtf-hx-xoM">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Vu-V0-76T">
+                                    <textField canDrawConcurrently="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Vu-V0-76T">
                                         <rect key="frame" x="176" y="131" width="97" height="38"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hallo" id="U5W-Sa-IoX">
                                             <font key="font" size="31" name="Raleway-Bold"/>
