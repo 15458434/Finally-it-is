@@ -711,8 +711,10 @@
                                     </textField>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="AaD-2h-nsf"/>
                                     <constraint firstItem="5DL-Aa-JqI" firstAttribute="centerY" secondItem="p2f-Dn-2B9" secondAttribute="centerY" constant="-6" id="F8s-vT-E5j"/>
                                     <constraint firstItem="5DL-Aa-JqI" firstAttribute="centerX" secondItem="p2f-Dn-2B9" secondAttribute="centerX" id="HoX-jn-fq9"/>
+                                    <constraint firstAttribute="height" constant="300" id="qRu-C0-y9b"/>
                                 </constraints>
                             </visualEffectView>
                         </subviews>
@@ -757,6 +759,8 @@
                                     </textField>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="AMG-BR-X8m"/>
+                                    <constraint firstAttribute="height" constant="300" id="QUC-eg-HKW"/>
                                     <constraint firstItem="Jkx-7c-8oV" firstAttribute="centerY" secondItem="NrB-4e-PvW" secondAttribute="centerY" constant="-6" id="bvq-98-c8F"/>
                                     <constraint firstItem="Jkx-7c-8oV" firstAttribute="centerX" secondItem="NrB-4e-PvW" secondAttribute="centerX" id="oKV-aR-CJR"/>
                                 </constraints>
@@ -805,6 +809,8 @@
                                 <constraints>
                                     <constraint firstItem="3Vu-V0-76T" firstAttribute="centerX" secondItem="dtf-hx-xoM" secondAttribute="centerX" id="5rE-Cx-dZh"/>
                                     <constraint firstItem="3Vu-V0-76T" firstAttribute="centerY" secondItem="dtf-hx-xoM" secondAttribute="centerY" constant="-6" id="fCI-AS-y82"/>
+                                    <constraint firstAttribute="width" constant="450" id="nEZ-Ie-9uG"/>
+                                    <constraint firstAttribute="height" constant="300" id="vaU-UQ-Gb1"/>
                                 </constraints>
                             </visualEffectView>
                         </subviews>

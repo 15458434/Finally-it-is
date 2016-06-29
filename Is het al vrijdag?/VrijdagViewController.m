@@ -60,6 +60,7 @@
     activity.keywords = [NSSet setWithArray:@[@"is", @"het", @"al", @"vrijdag"]];
     activity.userInfo = @{@"state": _isHetAlVrijdagLabel.stringValue};
     activity.eligibleForSearch = YES;
+    activity.eligibleForPublicIndexing = YES;
     self.userActivity = activity;
     [self.userActivity becomeCurrent];
 }
