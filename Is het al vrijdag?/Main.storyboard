@@ -21,6 +21,19 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="l2I-mB-OMR"/>
+                                        <menuItem title="My OS X Apps" id="oCb-10-H46">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="myOSXAppsPressed:" target="Voe-Tx-rLC" id="v5i-Sd-9S4"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="My iOS Apps" id="PmW-GU-EYg">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="myiOSAppsPressed:" target="Voe-Tx-rLC" id="EEp-Ik-QNA"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>

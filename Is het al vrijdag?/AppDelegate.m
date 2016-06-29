@@ -14,6 +14,18 @@
 
 @implementation AppDelegate
 
+- (IBAction)myOSXAppsPressed:(id)sender
+{
+    NSURL *url = [[NSURL alloc] initWithString:@"http://appstore.com/mac/markcornelisse"];
+    [[NSWorkspace sharedWorkspace] openURL:url];
+}
+
+- (IBAction)myiOSAppsPressed:(id)sender
+{
+    NSURL *url = [[NSURL alloc] initWithString:@"http://appstore.com/markcornelisse"];
+    [[NSWorkspace sharedWorkspace] openURL:url];
+}
+
 - (IBAction)bringAllToFrontPressed:(id)sender
 {
     NSApplication *sharedApplication = [NSApplication sharedApplication];
