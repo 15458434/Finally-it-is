@@ -76,8 +76,6 @@
 				380490941D2320A500A0C31E /* DayController.m */,
 				380490881D231FD000A0C31E /* Assets.xcassets */,
 				380490961D2328CE00A0C31E /* Main.storyboard */,
-				3804908D1D231FD000A0C31E /* Info.plist */,
-				380490A61D2479FE00A0C31E /* Credits.rtf */,
 				380490821D231FD000A0C31E /* Supporting Files */,
 			);
 			path = "Is het al vrijdag?";
@@ -86,6 +84,8 @@
 		380490821D231FD000A0C31E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3804908D1D231FD000A0C31E /* Info.plist */,
+				380490A61D2479FE00A0C31E /* Credits.rtf */,
 				380490831D231FD000A0C31E /* main.m */,
 			);
 			name = "Supporting Files";
