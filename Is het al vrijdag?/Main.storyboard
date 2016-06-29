@@ -789,7 +789,7 @@
         <!--17 uur?-->
         <scene sceneID="aZA-cN-Lyu">
             <objects>
-                <viewController title="17 uur?" id="yCh-Iw-WOa" customClass="VrijdagViewController" sceneMemberID="viewController">
+                <viewController title="17 uur?" id="yCh-Iw-WOa" customClass="ZeventienUurViewController" sceneMemberID="viewController">
                     <view key="view" id="uQ2-GX-jpE">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -827,7 +827,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
-                        <outlet property="isHetAlVrijdagLabel" destination="3Vu-V0-76T" id="koa-l0-OX1"/>
+                        <outlet property="isHetAlZeventienUurLabel" destination="3Vu-V0-76T" id="oex-nL-nPD"/>
                     </connections>
                 </viewController>
                 <customObject id="Enb-qL-Jey" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
