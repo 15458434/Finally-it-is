@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		380490811D231FD000A0C31E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490801D231FD000A0C31E /* AppDelegate.m */; };
 		380490841D231FD000A0C31E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490831D231FD000A0C31E /* main.m */; };
-		380490871D231FD000A0C31E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490861D231FD000A0C31E /* ViewController.m */; };
+		380490871D231FD000A0C31E /* VrijdagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490861D231FD000A0C31E /* VrijdagViewController.m */; };
 		380490891D231FD000A0C31E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380490881D231FD000A0C31E /* Assets.xcassets */; };
-		3804908C1D231FD000A0C31E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3804908A1D231FD000A0C31E /* Main.storyboard */; };
+		380490951D2320A500A0C31E /* DayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490941D2320A500A0C31E /* DayController.m */; };
+		380490971D2328CE00A0C31E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380490961D2328CE00A0C31E /* Main.storyboard */; };
+		3804909D1D2329C300A0C31E /* WeekendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804909C1D2329C300A0C31E /* WeekendViewController.m */; };
+		380490A31D23D5B000A0C31E /* ZeventienUurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490A21D23D5B000A0C31E /* ZeventienUurViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,11 +22,18 @@
 		3804907F1D231FD000A0C31E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		380490801D231FD000A0C31E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		380490831D231FD000A0C31E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		380490851D231FD000A0C31E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		380490861D231FD000A0C31E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		380490851D231FD000A0C31E /* VrijdagViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VrijdagViewController.h; sourceTree = "<group>"; };
+		380490861D231FD000A0C31E /* VrijdagViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VrijdagViewController.m; sourceTree = "<group>"; };
 		380490881D231FD000A0C31E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3804908B1D231FD000A0C31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3804908D1D231FD000A0C31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		380490931D2320A500A0C31E /* DayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayController.h; sourceTree = "<group>"; };
+		380490941D2320A500A0C31E /* DayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayController.m; sourceTree = "<group>"; };
+		380490961D2328CE00A0C31E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3804909B1D2329C300A0C31E /* WeekendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekendViewController.h; sourceTree = "<group>"; };
+		3804909C1D2329C300A0C31E /* WeekendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekendViewController.m; sourceTree = "<group>"; };
+		380490A11D23D5B000A0C31E /* ZeventienUurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeventienUurViewController.h; sourceTree = "<group>"; };
+		380490A21D23D5B000A0C31E /* ZeventienUurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeventienUurViewController.m; sourceTree = "<group>"; };
+		380490A41D23D86B00A0C31E /* Is het al vrijdag?.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Is het al vrijdag?.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,19 @@
 		3804907E1D231FD000A0C31E /* Is het al vrijdag? */ = {
 			isa = PBXGroup;
 			children = (
+				380490A41D23D86B00A0C31E /* Is het al vrijdag?.entitlements */,
 				3804907F1D231FD000A0C31E /* AppDelegate.h */,
 				380490801D231FD000A0C31E /* AppDelegate.m */,
-				380490851D231FD000A0C31E /* ViewController.h */,
-				380490861D231FD000A0C31E /* ViewController.m */,
+				380490A11D23D5B000A0C31E /* ZeventienUurViewController.h */,
+				380490A21D23D5B000A0C31E /* ZeventienUurViewController.m */,
+				380490851D231FD000A0C31E /* VrijdagViewController.h */,
+				380490861D231FD000A0C31E /* VrijdagViewController.m */,
+				3804909B1D2329C300A0C31E /* WeekendViewController.h */,
+				3804909C1D2329C300A0C31E /* WeekendViewController.m */,
+				380490931D2320A500A0C31E /* DayController.h */,
+				380490941D2320A500A0C31E /* DayController.m */,
 				380490881D231FD000A0C31E /* Assets.xcassets */,
-				3804908A1D231FD000A0C31E /* Main.storyboard */,
+				380490961D2328CE00A0C31E /* Main.storyboard */,
 				3804908D1D231FD000A0C31E /* Info.plist */,
 				380490821D231FD000A0C31E /* Supporting Files */,
 			);
@@ -107,6 +124,12 @@
 				TargetAttributes = {
 					3804907B1D231FD000A0C31E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Z6JP26PUUY;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -134,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				380490891D231FD000A0C31E /* Assets.xcassets in Resources */,
-				3804908C1D231FD000A0C31E /* Main.storyboard in Resources */,
+				380490971D2328CE00A0C31E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,24 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				380490871D231FD000A0C31E /* ViewController.m in Sources */,
+				3804909D1D2329C300A0C31E /* WeekendViewController.m in Sources */,
+				380490951D2320A500A0C31E /* DayController.m in Sources */,
+				380490871D231FD000A0C31E /* VrijdagViewController.m in Sources */,
+				380490A31D23D5B000A0C31E /* ZeventienUurViewController.m in Sources */,
 				380490841D231FD000A0C31E /* main.m in Sources */,
 				380490811D231FD000A0C31E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3804908A1D231FD000A0C31E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3804908B1D231FD000A0C31E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3804908E1D231FD000A0C31E /* Debug */ = {
@@ -250,6 +265,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Is het al vrijdag?/Is het al vrijdag?.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Is het al vrijdag?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -262,6 +279,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Is het al vrijdag?/Is het al vrijdag?.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Is het al vrijdag?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

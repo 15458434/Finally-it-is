@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController.h
 //  Is het al vrijdag?
 //
 //  Created by Mark Cornelisse on 28/06/16.
@@ -8,7 +8,7 @@
 
 @import Cocoa;
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface VrijdagViewController : NSViewController
 
 
 @end

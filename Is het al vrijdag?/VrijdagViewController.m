@@ -1,0 +1,65 @@
+//
+//  ViewController.m
+//  Is het al vrijdag?
+//
+//  Created by Mark Cornelisse on 28/06/16.
+//  Copyright © 2016 Over de muur producties. All rights reserved.
+//
+
+#import "VrijdagViewController.h"
+#import "DayController.h"
+
+@interface VrijdagViewController ()
+
+@property (nonatomic, weak) IBOutlet NSTextField *isHetAlVrijdagLabel;
+
+@property (nonatomic, strong) DayController *dayController;
+
+@end
+
+@implementation VrijdagViewController
+
+#pragma mark - New in this class
+
+- (void)update
+{
+    BOOL isHetAlVrijdag = _dayController.isHetAlVrijdag;
+    if (isHetAlVrijdag) {
+        _isHetAlVrijdagLabel.textColor = [NSColor greenColor];
+        _isHetAlVrijdagLabel.stringValue = @"YES";
+    } else {
+        _isHetAlVrijdagLabel.textColor = [NSColor redColor];
+        _isHetAlVrijdagLabel.stringValue = @"NO";
+    }
+}
+
+#pragma mark - NSViewController
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    // Do any additional setup after loading the view.
+    _dayController = [[DayController alloc] init];
+}
+
+- (void)viewWillAppear
+{
+    [super viewWillAppear];
+    
+    [self update];
+}
+
+- (void)setRepresentedObject:(id)representedObject {
+    [super setRepresentedObject:representedObject];
+
+    // Update the view, if already loaded.
+}
+
+@end
