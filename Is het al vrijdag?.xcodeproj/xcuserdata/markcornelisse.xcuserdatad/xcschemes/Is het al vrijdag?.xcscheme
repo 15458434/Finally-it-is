@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3804907B1D231FD000A0C31E"
-               BuildableName = "Is het al vrijdag?.app"
-               BlueprintName = "Is het al vrijdag?"
+               BuildableName = "Is het al.app"
+               BlueprintName = "Is het al"
                ReferencedContainer = "container:Is het al vrijdag?.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3804907B1D231FD000A0C31E"
-            BuildableName = "Is het al vrijdag?.app"
-            BlueprintName = "Is het al vrijdag?"
+            BuildableName = "Is het al.app"
+            BlueprintName = "Is het al"
             ReferencedContainer = "container:Is het al vrijdag?.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3804907B1D231FD000A0C31E"
-            BuildableName = "Is het al vrijdag?.app"
-            BlueprintName = "Is het al vrijdag?"
+            BuildableName = "Is het al.app"
+            BlueprintName = "Is het al"
             ReferencedContainer = "container:Is het al vrijdag?.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3804907B1D231FD000A0C31E"
-            BuildableName = "Is het al vrijdag?.app"
-            BlueprintName = "Is het al vrijdag?"
+            BuildableName = "Is het al.app"
+            BlueprintName = "Is het al"
             ReferencedContainer = "container:Is het al vrijdag?.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

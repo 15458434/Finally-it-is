@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3804907C1D231FD000A0C31E /* Is het al vrijdag?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Is het al vrijdag?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3804907C1D231FD000A0C31E /* Is het al.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Is het al.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3804907F1D231FD000A0C31E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		380490801D231FD000A0C31E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		380490831D231FD000A0C31E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		3804907D1D231FD000A0C31E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3804907C1D231FD000A0C31E /* Is het al vrijdag?.app */,
+				3804907C1D231FD000A0C31E /* Is het al.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,9 +104,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3804907B1D231FD000A0C31E /* Is het al vrijdag? */ = {
+		3804907B1D231FD000A0C31E /* Is het al */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 380490901D231FD000A0C31E /* Build configuration list for PBXNativeTarget "Is het al vrijdag?" */;
+			buildConfigurationList = 380490901D231FD000A0C31E /* Build configuration list for PBXNativeTarget "Is het al" */;
 			buildPhases = (
 				380490781D231FD000A0C31E /* Sources */,
 				380490791D231FD000A0C31E /* Frameworks */,
@@ -116,9 +116,9 @@
 			);
 			dependencies = (
 			);
-			name = "Is het al vrijdag?";
+			name = "Is het al";
 			productName = "Is het al vrijdag?";
-			productReference = 3804907C1D231FD000A0C31E /* Is het al vrijdag?.app */;
+			productReference = 3804907C1D231FD000A0C31E /* Is het al.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3804907B1D231FD000A0C31E /* Is het al vrijdag? */,
+				3804907B1D231FD000A0C31E /* Is het al */,
 			);
 		};
 /* End PBXProject section */
@@ -309,7 +309,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		380490901D231FD000A0C31E /* Build configuration list for PBXNativeTarget "Is het al vrijdag?" */ = {
+		380490901D231FD000A0C31E /* Build configuration list for PBXNativeTarget "Is het al" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				380490911D231FD000A0C31E /* Debug */,
