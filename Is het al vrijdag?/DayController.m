@@ -48,6 +48,11 @@
     if (self.isHetAlVrijdag) {
         return self.isHetAlZeventienUur;
     }
+    
+    if (components.weekday == 2 && components.hour < 9) {
+        return YES;
+    }
+    
     if (components.weekday == 7 || components.weekday == 1) {
         return YES;
     } else {
