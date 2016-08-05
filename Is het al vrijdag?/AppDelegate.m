@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <NSSharingServiceDelegate>
 
 @end
 
@@ -42,6 +42,16 @@
     }
 }
 
+- (IBAction)sendFeedbackPressed:(id)sender
+{
+    NSSharingService *service = [NSSharingService sharingServiceNamed:NSSharingServiceNameComposeEmail];
+    service.delegate = self;
+    service.recipients = @[@"support@markcornelisse.nl"];
+    service.subject = [ NSString stringWithFormat:@"Feedback voor Is het al"];
+    NSString *body = @"Dear Mark, \n\n";
+    NSArray *shareItems = @[body];
+    [service performWithItems:shareItems];
+}
 
 #pragma mark - NSApplicationDelegate
 
@@ -72,6 +82,17 @@
     // Insert code here to tear down your application
 }
 
+#pragma mark - NSSharedServicesDelegate
 
+- (void)sharingService:(NSSharingService *)sharingService didShareItems:(NSArray *)items
+{
+    NSLog(@"Sharing succesful");
+}
+
+- (void)sharingService:(NSSharingService *)sharingService didFailToShareItems:(NSArray *)items error:(NSError *)error
+{
+    NSLog(@"Sharing failed: %@", [error localizedDescription]);
+    
+}
 
 @end
