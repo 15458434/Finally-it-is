@@ -641,6 +641,12 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
+                                        <menuItem title="Send Feedback" id="TpZ-Kp-qUf">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="sendFeedbackPressed:" target="Voe-Tx-rLC" id="YrF-gp-nBC"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Is het al Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
@@ -686,7 +692,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <visualEffectView appearanceType="vibrantLight" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="dqY-6f-9Wc">
+                            <visualEffectView wantsLayer="YES" appearanceType="vibrantLight" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="dqY-6f-9Wc">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <subviews>
                                     <containerView translatesAutoresizingMaskIntoConstraints="NO" id="qLE-Tl-KS7">
@@ -707,7 +713,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="dqY-6f-9Wc" secondAttribute="bottom" id="1IN-Wn-ldV"/>
                             <constraint firstItem="dqY-6f-9Wc" firstAttribute="leading" secondItem="lRZ-dl-lvX" secondAttribute="leading" id="Ezv-7g-eUG"/>
-                            <constraint firstItem="dqY-6f-9Wc" firstAttribute="top" secondItem="lRZ-dl-lvX" secondAttribute="top" id="Frk-me-cXH"/>
+                            <constraint firstItem="dqY-6f-9Wc" firstAttribute="top" secondItem="lRZ-dl-lvX" secondAttribute="top" priority="750" id="Frk-me-cXH"/>
                             <constraint firstAttribute="trailing" secondItem="dqY-6f-9Wc" secondAttribute="trailing" id="iph-Uo-uYo"/>
                         </constraints>
                     </view>
@@ -752,7 +758,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <visualEffectView canDrawConcurrently="YES" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="p2f-Dn-2B9">
+                            <visualEffectView wantsLayer="YES" canDrawConcurrently="YES" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="p2f-Dn-2B9">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <subviews>
                                     <textField canDrawConcurrently="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5DL-Aa-JqI">
@@ -800,7 +806,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <visualEffectView canDrawConcurrently="YES" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="NrB-4e-PvW">
+                            <visualEffectView wantsLayer="YES" canDrawConcurrently="YES" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="NrB-4e-PvW">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <subviews>
                                     <textField canDrawConcurrently="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jkx-7c-8oV">
@@ -848,7 +854,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <visualEffectView canDrawConcurrently="YES" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="dtf-hx-xoM">
+                            <visualEffectView wantsLayer="YES" canDrawConcurrently="YES" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="dtf-hx-xoM">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <subviews>
                                     <textField canDrawConcurrently="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Vu-V0-76T">
