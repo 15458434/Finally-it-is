@@ -16,6 +16,8 @@
 		3804909D1D2329C300A0C31E /* WeekendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804909C1D2329C300A0C31E /* WeekendViewController.m */; };
 		380490A31D23D5B000A0C31E /* ZeventienUurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490A21D23D5B000A0C31E /* ZeventienUurViewController.m */; };
 		380490A71D2479FE00A0C31E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 380490A61D2479FE00A0C31E /* Credits.rtf */; };
+		38A7D0B11D54F09900FF1CAC /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A7D0B01D54F09900FF1CAC /* WindowController.m */; };
+		38A7D0B41D54F34800FF1CAC /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A7D0B31D54F34800FF1CAC /* ContainerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,10 @@
 		380490A21D23D5B000A0C31E /* ZeventienUurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeventienUurViewController.m; sourceTree = "<group>"; };
 		380490A41D23D86B00A0C31E /* Is het al vrijdag?.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Is het al vrijdag?.entitlements"; sourceTree = "<group>"; };
 		380490A61D2479FE00A0C31E /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		38A7D0AF1D54F09900FF1CAC /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		38A7D0B01D54F09900FF1CAC /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		38A7D0B21D54F34800FF1CAC /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		38A7D0B31D54F34800FF1CAC /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,8 @@
 				380490A41D23D86B00A0C31E /* Is het al vrijdag?.entitlements */,
 				3804907F1D231FD000A0C31E /* AppDelegate.h */,
 				380490801D231FD000A0C31E /* AppDelegate.m */,
+				38A7D0AF1D54F09900FF1CAC /* WindowController.h */,
+				38A7D0B01D54F09900FF1CAC /* WindowController.m */,
 				380490A51D2407CF00A0C31E /* ViewControllers */,
 				380490931D2320A500A0C31E /* DayController.h */,
 				380490941D2320A500A0C31E /* DayController.m */,
@@ -94,6 +102,8 @@
 		380490A51D2407CF00A0C31E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				38A7D0B21D54F34800FF1CAC /* ContainerViewController.h */,
+				38A7D0B31D54F34800FF1CAC /* ContainerViewController.m */,
 				380490A11D23D5B000A0C31E /* ZeventienUurViewController.h */,
 				380490A21D23D5B000A0C31E /* ZeventienUurViewController.m */,
 				380490851D231FD000A0C31E /* VrijdagViewController.h */,
@@ -181,10 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3804909D1D2329C300A0C31E /* WeekendViewController.m in Sources */,
+				38A7D0B11D54F09900FF1CAC /* WindowController.m in Sources */,
 				380490951D2320A500A0C31E /* DayController.m in Sources */,
 				380490871D231FD000A0C31E /* VrijdagViewController.m in Sources */,
 				380490A31D23D5B000A0C31E /* ZeventienUurViewController.m in Sources */,
 				380490841D231FD000A0C31E /* main.m in Sources */,
+				38A7D0B41D54F34800FF1CAC /* ContainerViewController.m in Sources */,
 				380490811D231FD000A0C31E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
