@@ -33,6 +33,20 @@
     }
 }
 
+- (void)createUserActivity
+{
+    NSOperatingSystemVersion elCapitan = (NSOperatingSystemVersion){10, 11, 0};
+    if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:elCapitan]) {
+        NSUserActivity *activity = [[NSUserActivity alloc] initWithActivityType:@"com.greenhair.ishetal.observe"];
+        activity.title = @"Is het al vrijdag";
+        activity.keywords = [NSSet setWithArray:@[@"is", @"het", @"al", @"vrijdag"]];
+        activity.userInfo = @{@"state": _isHetAlVrijdagLabel.stringValue};
+        activity.eligibleForHandoff = NO;
+        activity.eligibleForSearch = YES;
+        activity.eligibleForPublicIndexing = YES;
+        self.userActivity = activity;    }
+}
+
 #pragma mark - NSViewController
 
 - (void)awakeFromNib
@@ -55,13 +69,7 @@
     
     [self update];
     
-    NSUserActivity *activity = [[NSUserActivity alloc] initWithActivityType:@"com.greenhair.ishetal.observe"];
-    activity.title = @"Is het al vrijdag";
-    activity.keywords = [NSSet setWithArray:@[@"is", @"het", @"al", @"vrijdag"]];
-    activity.userInfo = @{@"state": _isHetAlVrijdagLabel.stringValue};
-    activity.eligibleForSearch = YES;
-    activity.eligibleForPublicIndexing = YES;
-    self.userActivity = activity;
+    [self createUserActivity];
     [self.userActivity becomeCurrent];
 }
 
