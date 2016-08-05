@@ -26,16 +26,6 @@
     self.view.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
 }
 
-//override func updateViewConstraints() {
-//    if topConstraint == nil {
-//        if let topAnchor = self.view.window?.contentLayoutGuide?.topAnchor {
-//            topConstraint = self.textField.topAnchor.constraintEqualToAnchor(topAnchor, constant: 20)
-//            topConstraint?.active = true
-//        }
-//    }
-//    super.updateViewConstraints()
-//}
-
 - (void)updateViewConstraints
 {
     if (!_topConstraint) {
