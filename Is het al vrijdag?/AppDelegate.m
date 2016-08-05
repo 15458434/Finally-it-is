@@ -92,7 +92,8 @@
 - (void)sharingService:(NSSharingService *)sharingService didFailToShareItems:(NSArray *)items error:(NSError *)error
 {
     NSLog(@"Sharing failed: %@", [error localizedDescription]);
-    
+    NSAlert *alert = [NSAlert alertWithError:error];
+    [alert runModal];
 }
 
 @end
