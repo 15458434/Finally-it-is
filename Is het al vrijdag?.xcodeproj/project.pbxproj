@@ -21,6 +21,7 @@
 		385AC1201DA78CA8000A2BF8 /* WeekendDayControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385AC11F1DA78CA8000A2BF8 /* WeekendDayControllerTests.m */; };
 		385AC1261DA7C8DD000A2BF8 /* EventStateController+EventChangeHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 385AC1251DA7C8DD000A2BF8 /* EventStateController+EventChangeHandling.m */; };
 		385AC1291DA7CC38000A2BF8 /* EventStateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385AC1281DA7CC38000A2BF8 /* EventStateViewController.m */; };
+		385AC12D1DA80A0C000A2BF8 /* DebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 385AC12C1DA80A0C000A2BF8 /* DebugLog.m */; };
 		38A7D0B11D54F09900FF1CAC /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A7D0B01D54F09900FF1CAC /* WindowController.m */; };
 		38A7D0B41D54F34800FF1CAC /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A7D0B31D54F34800FF1CAC /* ContainerViewController.m */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,8 @@
 		385AC1251DA7C8DD000A2BF8 /* EventStateController+EventChangeHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EventStateController+EventChangeHandling.m"; sourceTree = "<group>"; };
 		385AC1271DA7CC38000A2BF8 /* EventStateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventStateViewController.h; sourceTree = "<group>"; };
 		385AC1281DA7CC38000A2BF8 /* EventStateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventStateViewController.m; sourceTree = "<group>"; };
+		385AC12C1DA80A0C000A2BF8 /* DebugLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugLog.m; sourceTree = "<group>"; };
+		385AC12E1DA80A20000A2BF8 /* DebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugLog.h; sourceTree = "<group>"; };
 		38A7D0AF1D54F09900FF1CAC /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		38A7D0B01D54F09900FF1CAC /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		38A7D0B21D54F34800FF1CAC /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				38A7D0B01D54F09900FF1CAC /* WindowController.m */,
 				380490A51D2407CF00A0C31E /* ViewControllers */,
 				385AC12A1DA7D342000A2BF8 /* Model */,
+				385AC12E1DA80A20000A2BF8 /* DebugLog.h */,
+				385AC12C1DA80A0C000A2BF8 /* DebugLog.m */,
 				380490881D231FD000A0C31E /* Assets.xcassets */,
 				380490961D2328CE00A0C31E /* Main.storyboard */,
 				380490821D231FD000A0C31E /* Supporting Files */,
@@ -293,6 +298,7 @@
 				380490871D231FD000A0C31E /* VrijdagViewController.m in Sources */,
 				385AC1261DA7C8DD000A2BF8 /* EventStateController+EventChangeHandling.m in Sources */,
 				385AC1291DA7CC38000A2BF8 /* EventStateViewController.m in Sources */,
+				385AC12D1DA80A0C000A2BF8 /* DebugLog.m in Sources */,
 				380490A31D23D5B000A0C31E /* ZeventienUurViewController.m in Sources */,
 				380490841D231FD000A0C31E /* main.m in Sources */,
 				38A7D0B41D54F34800FF1CAC /* ContainerViewController.m in Sources */,

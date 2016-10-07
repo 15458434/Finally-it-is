@@ -9,6 +9,8 @@
 #import "EventStateViewController.h"
 #import "EventStateController+EventChangeHandling.h"
 
+#import "DebugLog.h"
+
 @interface EventStateViewController ()
 
 @end
@@ -35,6 +37,18 @@
     }];
 }
 
+#pragma mark - NSNotification
+
+- (void)applicationDidBecomeActive:(NSNotification *)sender
+{
+    [self updateNow];
+}
+
+- (void)applicationDidUnhide:(NSNotification *)sender
+{
+    [self updateNow];
+}
+
 #pragma mark - NSViewController
 
 - (void)viewDidLoad {
@@ -43,6 +57,9 @@
     self.view.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
     
     [self updateOnAllNextChangeEvents];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive:) name:NSApplicationDidBecomeActiveNotification object:[NSApplication sharedApplication]];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidUnhide:) name:NSApplicationDidUnhideNotification object:[NSApplication sharedApplication]];
 }
 
 - (void)viewWillAppear
