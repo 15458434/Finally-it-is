@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
 
 @interface SeventeenHourDayController : DayController
 
-- (id)initWithType:(DayControllerType)type NS_UNAVAILABLE;
+- (instancetype)initWithType:(DayControllerType)type NS_UNAVAILABLE;
 
 @end
 
@@ -37,7 +37,7 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
 
 @interface FridayDayController : DayController
 
-- (id)initWithType:(DayControllerType)type NS_UNAVAILABLE;
+- (instancetype)initWithType:(DayControllerType)type NS_UNAVAILABLE;
 
 @end
 
@@ -45,6 +45,6 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
 
 @interface WeekendDayController : DayController
 
-- (id)initWithType:(DayControllerType)type NS_UNAVAILABLE;
+- (instancetype)initWithType:(DayControllerType)type NS_UNAVAILABLE;
 
 @end
