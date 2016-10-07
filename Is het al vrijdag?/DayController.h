@@ -8,10 +8,43 @@
 
 @import Foundation;
 
+typedef NS_ENUM(NSUInteger, DayControllerType) {
+    DayControllerTypeSeventeenHour,
+    DayControllerTypeFriday,
+    DayControllerTypeWeekend
+};
+
 @interface DayController : NSObject
 
-@property (nonatomic, readonly) BOOL isHetAlZeventienUur;
-@property (nonatomic, readonly) BOOL isHetAlVrijdag;
-@property (nonatomic, readonly) BOOL isHetAlWeekend;
+- (instancetype)initWithType:(DayControllerType)type;
+
+@property (nonatomic, readonly) BOOL isHetAl;
+@property (nonatomic, readonly) NSDate *nextChange;
+
+- (NSDate *)nextChangeFromDate:(NSDate *)date;
+
+@end
+
+#pragma mark - SeventeenHourDayController
+
+@interface SeventeenHourDayController : DayController
+
+- (id)initWithType:(DayControllerType)type NS_UNAVAILABLE;
+
+@end
+
+#pragma mark - FridayDayController
+
+@interface FridayDayController : DayController
+
+- (id)initWithType:(DayControllerType)type NS_UNAVAILABLE;
+
+@end
+
+#pragma mark - WeekendDayController
+
+@interface WeekendDayController : DayController
+
+- (id)initWithType:(DayControllerType)type NS_UNAVAILABLE;
 
 @end

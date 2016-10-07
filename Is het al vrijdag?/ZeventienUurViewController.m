@@ -23,7 +23,7 @@
 
 - (void)update
 {
-    BOOL isHetAlZeventienUur = _dayController.isHetAlZeventienUur;
+    BOOL isHetAlZeventienUur = _dayController.isHetAl;
     if (isHetAlZeventienUur) {
         _isHetAlZeventienUurLabel.textColor = [NSColor greenColor];
         _isHetAlZeventienUurLabel.stringValue = @"JA";
@@ -64,7 +64,7 @@
     // Do any additional setup after loading the view.
     self.view.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
     
-    _dayController = [[DayController alloc] init];
+    _dayController = [[DayController alloc] initWithType:DayControllerTypeSeventeenHour];
 }
 
 - (void)viewWillAppear

@@ -20,7 +20,7 @@
 
 - (void)update
 {
-    BOOL isHetAlWeekend = _dayController.isHetAlWeekend;
+    BOOL isHetAlWeekend = _dayController.isHetAl;
     if (isHetAlWeekend) {
         _isHetAlWeekendLabel.textColor = [NSColor greenColor];
         _isHetAlWeekendLabel.stringValue = @"JA";
@@ -51,7 +51,7 @@
 {
     [super viewDidLoad];
     
-    _dayController = [[DayController alloc] init];
+    _dayController = [[DayController alloc] initWithType:DayControllerTypeWeekend];
 }
 
 - (void)viewWillAppear

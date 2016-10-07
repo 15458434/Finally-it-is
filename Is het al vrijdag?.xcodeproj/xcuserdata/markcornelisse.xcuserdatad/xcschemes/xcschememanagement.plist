@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Is het al vrijdag?.xcscheme</key>
+		<key>Is het al vrijdag?UnitTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Is het al.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -13,6 +18,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>3804907B1D231FD000A0C31E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>385AC0FA1DA76933000A2BF8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>385AC10A1DA76B53000A2BF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

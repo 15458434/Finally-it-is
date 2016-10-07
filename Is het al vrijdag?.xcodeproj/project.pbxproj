@@ -16,9 +16,22 @@
 		3804909D1D2329C300A0C31E /* WeekendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804909C1D2329C300A0C31E /* WeekendViewController.m */; };
 		380490A31D23D5B000A0C31E /* ZeventienUurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490A21D23D5B000A0C31E /* ZeventienUurViewController.m */; };
 		380490A71D2479FE00A0C31E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 380490A61D2479FE00A0C31E /* Credits.rtf */; };
+		385AC1161DA76B79000A2BF8 /* SeventeenHourDayControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385AC1151DA76B79000A2BF8 /* SeventeenHourDayControllerTests.m */; };
+		385AC11B1DA77F45000A2BF8 /* FridayDayControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385AC11A1DA77F45000A2BF8 /* FridayDayControllerTests.m */; };
+		385AC1201DA78CA8000A2BF8 /* WeekendDayControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385AC11F1DA78CA8000A2BF8 /* WeekendDayControllerTests.m */; };
 		38A7D0B11D54F09900FF1CAC /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A7D0B01D54F09900FF1CAC /* WindowController.m */; };
 		38A7D0B41D54F34800FF1CAC /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A7D0B31D54F34800FF1CAC /* ContainerViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		385AC1101DA76B53000A2BF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 380490741D231FD000A0C31E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3804907B1D231FD000A0C31E;
+			remoteInfo = "Is het al";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3804907C1D231FD000A0C31E /* Is het al.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Is het al.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +51,11 @@
 		380490A21D23D5B000A0C31E /* ZeventienUurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeventienUurViewController.m; sourceTree = "<group>"; };
 		380490A41D23D86B00A0C31E /* Is het al vrijdag?.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Is het al vrijdag?.entitlements"; sourceTree = "<group>"; };
 		380490A61D2479FE00A0C31E /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		385AC10B1DA76B53000A2BF8 /* Is het alTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Is het alTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		385AC10F1DA76B53000A2BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385AC1151DA76B79000A2BF8 /* SeventeenHourDayControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeventeenHourDayControllerTests.m; sourceTree = "<group>"; };
+		385AC11A1DA77F45000A2BF8 /* FridayDayControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FridayDayControllerTests.m; sourceTree = "<group>"; };
+		385AC11F1DA78CA8000A2BF8 /* WeekendDayControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekendDayControllerTests.m; sourceTree = "<group>"; };
 		38A7D0AF1D54F09900FF1CAC /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		38A7D0B01D54F09900FF1CAC /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		38A7D0B21D54F34800FF1CAC /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
@@ -52,6 +70,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		385AC1081DA76B53000A2BF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3804907E1D231FD000A0C31E /* Is het al vrijdag? */,
+				385AC10C1DA76B53000A2BF8 /* Is het alTests */,
 				3804907D1D231FD000A0C31E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				3804907C1D231FD000A0C31E /* Is het al.app */,
+				385AC10B1DA76B53000A2BF8 /* Is het alTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +141,17 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		385AC10C1DA76B53000A2BF8 /* Is het alTests */ = {
+			isa = PBXGroup;
+			children = (
+				385AC1151DA76B79000A2BF8 /* SeventeenHourDayControllerTests.m */,
+				385AC11A1DA77F45000A2BF8 /* FridayDayControllerTests.m */,
+				385AC11F1DA78CA8000A2BF8 /* WeekendDayControllerTests.m */,
+				385AC10F1DA76B53000A2BF8 /* Info.plist */,
+			);
+			path = "Is het alTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,23 +172,48 @@
 			productReference = 3804907C1D231FD000A0C31E /* Is het al.app */;
 			productType = "com.apple.product-type.application";
 		};
+		385AC10A1DA76B53000A2BF8 /* Is het alTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385AC1121DA76B53000A2BF8 /* Build configuration list for PBXNativeTarget "Is het alTests" */;
+			buildPhases = (
+				385AC1071DA76B53000A2BF8 /* Sources */,
+				385AC1081DA76B53000A2BF8 /* Frameworks */,
+				385AC1091DA76B53000A2BF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				385AC1111DA76B53000A2BF8 /* PBXTargetDependency */,
+			);
+			name = "Is het alTests";
+			productName = "Is het alTests";
+			productReference = 385AC10B1DA76B53000A2BF8 /* Is het alTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		380490741D231FD000A0C31E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Over de muur producties";
 				TargetAttributes = {
 					3804907B1D231FD000A0C31E = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = Z6JP26PUUY;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
 							};
 						};
+					};
+					385AC10A1DA76B53000A2BF8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Z6JP26PUUY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3804907B1D231FD000A0C31E;
 					};
 				};
 			};
@@ -168,6 +231,7 @@
 			projectRoot = "";
 			targets = (
 				3804907B1D231FD000A0C31E /* Is het al */,
+				385AC10A1DA76B53000A2BF8 /* Is het alTests */,
 			);
 		};
 /* End PBXProject section */
@@ -180,6 +244,13 @@
 				380490891D231FD000A0C31E /* Assets.xcassets in Resources */,
 				380490A71D2479FE00A0C31E /* Credits.rtf in Resources */,
 				380490971D2328CE00A0C31E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385AC1091DA76B53000A2BF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +272,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		385AC1071DA76B53000A2BF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385AC1161DA76B79000A2BF8 /* SeventeenHourDayControllerTests.m in Sources */,
+				385AC1201DA78CA8000A2BF8 /* WeekendDayControllerTests.m in Sources */,
+				385AC11B1DA77F45000A2BF8 /* FridayDayControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		385AC1111DA76B53000A2BF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3804907B1D231FD000A0C31E /* Is het al */;
+			targetProxy = 385AC1101DA76B53000A2BF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3804908E1D231FD000A0C31E /* Debug */ = {
@@ -218,8 +307,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -262,8 +353,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -292,6 +385,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Is het al vrijdag?/Is het al vrijdag?.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z6JP26PUUY;
 				INFOPLIST_FILE = "Is het al vrijdag?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -307,11 +401,48 @@
 				CODE_SIGN_ENTITLEMENTS = "Is het al vrijdag?/Is het al vrijdag?.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z6JP26PUUY;
 				INFOPLIST_FILE = "Is het al vrijdag?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.greenhair.Is-het-al-vrijdag-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		385AC1131DA76B53000A2BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z6JP26PUUY;
+				INFOPLIST_FILE = "Is het alTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.greenhair.Is-het-alTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Is het al.app/Contents/MacOS/Is het al";
+			};
+			name = Debug;
+		};
+		385AC1141DA76B53000A2BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z6JP26PUUY;
+				INFOPLIST_FILE = "Is het alTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.greenhair.Is-het-alTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Is het al.app/Contents/MacOS/Is het al";
 			};
 			name = Release;
 		};
@@ -335,6 +466,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		385AC1121DA76B53000A2BF8 /* Build configuration list for PBXNativeTarget "Is het alTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385AC1131DA76B53000A2BF8 /* Debug */,
+				385AC1141DA76B53000A2BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
