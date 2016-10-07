@@ -58,9 +58,6 @@
     components = [_calendar components:_units fromDate:nextSwitchDate];
     XCTAssertEqual(components.weekday, 6, "Next switch date should happen on a friday");
     XCTAssertEqual(components.hour, 17, "Next switch hour should happen at 17:00 hours");
-
-    NSTimeInterval timeUntilNextSwitch = [_testController timeIntervalUntilNextChangeFromDate:tuesdayMorningDate];
-    XCTAssertTrue(timeUntilNextSwitch > 0, "Value should be bigger");
 }
 
 @end

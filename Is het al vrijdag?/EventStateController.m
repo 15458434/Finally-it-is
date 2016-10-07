@@ -36,12 +36,6 @@
     return nil;
 }
 
-- (NSTimeInterval)timeIntervalUntilNextChangeFromDate:(NSDate *)date
-{
-    NSDate *nextChangeDate = [self nextChangeFromDate:date];
-    return [nextChangeDate timeIntervalSinceDate:date];
-}
-
 @end
 
 #pragma mark - SeventeenHourDayController

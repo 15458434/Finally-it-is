@@ -22,7 +22,6 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
 @property (nonatomic, readonly) NSDate *nextChange;
 
 - (NSDate *)nextChangeFromDate:(NSDate *)date;
-- (NSTimeInterval)timeIntervalUntilNextChangeFromDate:(NSDate *)date;
 
 @end
 
