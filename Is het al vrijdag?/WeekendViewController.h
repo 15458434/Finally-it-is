@@ -6,7 +6,6 @@
 //  Copyright © 2016 Over de muur producties. All rights reserved.
 //
 
-@import Cocoa;
 #import "EventStateViewController.h"
 
 @interface WeekendViewController : EventStateViewController

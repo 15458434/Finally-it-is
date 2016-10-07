@@ -6,8 +6,6 @@
 //  Copyright © 2016 Over de muur producties. All rights reserved.
 //
 
-@import Cocoa;
-
 #include "EventStateViewController.h"
 
 @interface ZeventienUurViewController : EventStateViewController
