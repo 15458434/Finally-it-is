@@ -7,7 +7,8 @@
 //
 
 @import Cocoa;
+#import "EventStateViewController.h"
 
-@interface WeekendViewController : NSViewController
+@interface WeekendViewController : EventStateViewController
 
 @end

@@ -8,6 +8,8 @@
 
 @import Cocoa;
 
-@interface ZeventienUurViewController : NSViewController
+#include "EventStateViewController.h"
+
+@interface ZeventienUurViewController : EventStateViewController
 
 @end

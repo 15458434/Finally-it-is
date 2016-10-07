@@ -11,24 +11,9 @@
 
 @interface WeekendViewController ()
 
-@property (nonatomic, weak) IBOutlet NSTextField *isHetAlWeekendLabel;
-@property (nonatomic, strong) EventStateController *dayController;
-
 @end
 
 @implementation WeekendViewController
-
-- (void)update
-{
-    BOOL isHetAlWeekend = _dayController.isHetAl;
-    if (isHetAlWeekend) {
-        _isHetAlWeekendLabel.textColor = [NSColor greenColor];
-        _isHetAlWeekendLabel.stringValue = @"JA";
-    } else {
-        _isHetAlWeekendLabel.textColor = [NSColor redColor];
-        _isHetAlWeekendLabel.stringValue = @"NEE";
-    }
-}
 
 - (void)createUserActivity
 {
@@ -37,7 +22,7 @@
         NSUserActivity *activity = [[NSUserActivity alloc] initWithActivityType:@"com.greenhair.ishetal.observe"];
         activity.title = @"Is het al weekend";
         activity.keywords = [NSSet setWithArray:@[@"is", @"het", @"al", @"weekend"]];
-        activity.userInfo = @{@"state": _isHetAlWeekendLabel.stringValue};
+        activity.userInfo = @{@"state": self.isHetAlLabel.stringValue};
         activity.eligibleForHandoff = NO;
         activity.eligibleForSearch = YES;
         activity.eligibleForPublicIndexing = YES;
@@ -51,14 +36,12 @@
 {
     [super viewDidLoad];
     
-    _dayController = [[EventStateController alloc] initWithType:DayControllerTypeWeekend];
+    self.dayController = [[EventStateController alloc] initWithType:DayControllerTypeWeekend];
 }
 
 - (void)viewWillAppear
 {
     [super viewWillAppear];
-    
-    [self update];
     
     [self createUserActivity];
     [self.userActivity becomeCurrent];

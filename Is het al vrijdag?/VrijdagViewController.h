@@ -8,8 +8,9 @@
 
 @import Cocoa;
 
-@interface VrijdagViewController : NSViewController
+#import "EventStateViewController.h"
 
+@interface VrijdagViewController : EventStateViewController
 
 @end
 
