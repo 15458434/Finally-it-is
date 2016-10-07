@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
     DayControllerTypeWeekend
 };
 
-@interface DayController : NSObject
+@interface EventStateController : NSObject
 
 - (instancetype)initWithType:(DayControllerType)type;
 
@@ -22,12 +22,13 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
 @property (nonatomic, readonly) NSDate *nextChange;
 
 - (NSDate *)nextChangeFromDate:(NSDate *)date;
+- (NSTimeInterval)timeIntervalUntilNextChangeFromDate:(NSDate *)date;
 
 @end
 
 #pragma mark - SeventeenHourDayController
 
-@interface SeventeenHourDayController : DayController
+@interface SeventeenHourDayController : EventStateController
 
 - (instancetype)initWithType:(DayControllerType)type NS_UNAVAILABLE;
 
@@ -35,7 +36,7 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
 
 #pragma mark - FridayDayController
 
-@interface FridayDayController : DayController
+@interface FridayDayController : EventStateController
 
 - (instancetype)initWithType:(DayControllerType)type NS_UNAVAILABLE;
 
@@ -43,7 +44,7 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
 
 #pragma mark - WeekendDayController
 
-@interface WeekendDayController : DayController
+@interface WeekendDayController : EventStateController
 
 - (instancetype)initWithType:(DayControllerType)type NS_UNAVAILABLE;
 

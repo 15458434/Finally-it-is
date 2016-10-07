@@ -6,9 +6,9 @@
 //  Copyright © 2016 Over de muur producties. All rights reserved.
 //
 
-#import "DayController.h"
+#import "EventStateController.h"
 
-@implementation DayController
+@implementation EventStateController
 
 - (instancetype)initWithType:(DayControllerType)type
 {
@@ -34,6 +34,12 @@
 - (NSDate *)nextChangeFromDate:(NSDate *)date {
     [NSException raise:NSInternalInconsistencyException format:@"nextChangeFromDate should be implemented in a subclass"];
     return nil;
+}
+
+- (NSTimeInterval)timeIntervalUntilNextChangeFromDate:(NSDate *)date
+{
+    NSDate *nextChangeDate = [self nextChangeFromDate:date];
+    return [nextChangeDate timeIntervalSinceDate:date];
 }
 
 @end

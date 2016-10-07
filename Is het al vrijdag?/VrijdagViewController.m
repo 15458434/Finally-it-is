@@ -7,13 +7,13 @@
 //
 
 #import "VrijdagViewController.h"
-#import "DayController.h"
+#import "EventStateController.h"
 
 @interface VrijdagViewController ()
 
 @property (nonatomic, weak) IBOutlet NSTextField *isHetAlVrijdagLabel;
 
-@property (nonatomic, strong) DayController *dayController;
+@property (nonatomic, strong) EventStateController *dayController;
 
 @end
 
@@ -49,18 +49,11 @@
 
 #pragma mark - NSViewController
 
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-    
-    
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-    _dayController = [[DayController alloc] initWithType:DayControllerTypeFriday];
+    _dayController = [[EventStateController alloc] initWithType:DayControllerTypeFriday];
 }
 
 - (void)viewWillAppear

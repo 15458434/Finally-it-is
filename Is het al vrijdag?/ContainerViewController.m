@@ -22,7 +22,6 @@
     [super viewDidLoad];
     // Do view setup here.
     
-    // TODO: Set constraint for top to title bar.
     self.view.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
 }
 

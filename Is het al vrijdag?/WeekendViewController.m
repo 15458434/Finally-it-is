@@ -7,12 +7,12 @@
 //
 
 #import "WeekendViewController.h"
-#import "DayController.h"
+#import "EventStateController.h"
 
 @interface WeekendViewController ()
 
 @property (nonatomic, weak) IBOutlet NSTextField *isHetAlWeekendLabel;
-@property (nonatomic, strong) DayController *dayController;
+@property (nonatomic, strong) EventStateController *dayController;
 
 @end
 
@@ -51,7 +51,7 @@
 {
     [super viewDidLoad];
     
-    _dayController = [[DayController alloc] initWithType:DayControllerTypeWeekend];
+    _dayController = [[EventStateController alloc] initWithType:DayControllerTypeWeekend];
 }
 
 - (void)viewWillAppear

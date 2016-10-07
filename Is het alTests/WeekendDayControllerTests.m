@@ -7,11 +7,11 @@
 //
 
 @import XCTest;
-#import "DayController.h"
+#import "EventStateController.h"
 
 @interface WeekendDayControllerTests : XCTestCase
 
-@property (nonatomic, strong) DayController *testController;
+@property (nonatomic, strong) EventStateController *testController;
 @property (nonatomic, strong) NSCalendar *calendar;
 @property (nonatomic) NSCalendarUnit units;
 
@@ -22,7 +22,7 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    _testController = [[DayController alloc] initWithType:DayControllerTypeWeekend];
+    _testController = [[EventStateController alloc] initWithType:DayControllerTypeWeekend];
     XCTAssertNotNil(_testController, "Test Controller should exist at this moment");
     _calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     XCTAssertNotNil(_calendar, "Calender should exist at this moment");
@@ -59,6 +59,8 @@
     XCTAssertEqual(components.weekday, 6, "Next switch date should happen on a friday");
     XCTAssertEqual(components.hour, 17, "Next switch hour should happen at 17:00 hours");
 
+    NSTimeInterval timeUntilNextSwitch = [_testController timeIntervalUntilNextChangeFromDate:tuesdayMorningDate];
+    XCTAssertTrue(timeUntilNextSwitch > 0, "Value should be bigger");
 }
 
 @end

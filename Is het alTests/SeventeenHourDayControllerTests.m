@@ -7,11 +7,11 @@
 //
 
 @import XCTest;
-#include "DayController.h"
+#include "EventStateController.h"
 
 @interface SeventeenHourDayControllerTests : XCTestCase
 
-@property (nonatomic, strong) DayController *testController;
+@property (nonatomic, strong) EventStateController *testController;
 @property (nonatomic, strong) NSCalendar *calendar;
 @property (nonatomic) NSCalendarUnit units;
 
@@ -22,7 +22,7 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    _testController = [[DayController alloc] initWithType:DayControllerTypeSeventeenHour];
+    _testController = [[EventStateController alloc] initWithType:DayControllerTypeSeventeenHour];
     XCTAssertNotNil(_testController, "Test Controller should exist at this moment");
     _calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     XCTAssertNotNil(_calendar, "Calender should exist at this moment");

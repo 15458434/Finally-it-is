@@ -7,13 +7,13 @@
 //
 
 #import "ZeventienUurViewController.h"
-#import "DayController.h"
+#import "EventStateController.h"
 
 @interface ZeventienUurViewController ()
 
 @property (nonatomic, weak) IBOutlet NSTextField *isHetAlZeventienUurLabel;
 
-@property (nonatomic, strong) DayController *dayController;
+@property (nonatomic, strong) EventStateController *dayController;
 
 @end
 
@@ -48,14 +48,7 @@
     }
 }
 
-
 #pragma mark - NSViewController
-
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-    
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -63,7 +56,7 @@
     // Do any additional setup after loading the view.
     self.view.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
     
-    _dayController = [[DayController alloc] initWithType:DayControllerTypeSeventeenHour];
+    _dayController = [[EventStateController alloc] initWithType:DayControllerTypeSeventeenHour];
 }
 
 - (void)viewWillAppear

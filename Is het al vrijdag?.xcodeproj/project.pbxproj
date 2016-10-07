@@ -11,7 +11,7 @@
 		380490841D231FD000A0C31E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490831D231FD000A0C31E /* main.m */; };
 		380490871D231FD000A0C31E /* VrijdagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490861D231FD000A0C31E /* VrijdagViewController.m */; };
 		380490891D231FD000A0C31E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380490881D231FD000A0C31E /* Assets.xcassets */; };
-		380490951D2320A500A0C31E /* DayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490941D2320A500A0C31E /* DayController.m */; };
+		380490951D2320A500A0C31E /* EventStateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490941D2320A500A0C31E /* EventStateController.m */; };
 		380490971D2328CE00A0C31E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380490961D2328CE00A0C31E /* Main.storyboard */; };
 		3804909D1D2329C300A0C31E /* WeekendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804909C1D2329C300A0C31E /* WeekendViewController.m */; };
 		380490A31D23D5B000A0C31E /* ZeventienUurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380490A21D23D5B000A0C31E /* ZeventienUurViewController.m */; };
@@ -42,8 +42,8 @@
 		380490861D231FD000A0C31E /* VrijdagViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VrijdagViewController.m; sourceTree = "<group>"; };
 		380490881D231FD000A0C31E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3804908D1D231FD000A0C31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		380490931D2320A500A0C31E /* DayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayController.h; sourceTree = "<group>"; };
-		380490941D2320A500A0C31E /* DayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayController.m; sourceTree = "<group>"; };
+		380490931D2320A500A0C31E /* EventStateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventStateController.h; sourceTree = "<group>"; };
+		380490941D2320A500A0C31E /* EventStateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventStateController.m; sourceTree = "<group>"; };
 		380490961D2328CE00A0C31E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3804909B1D2329C300A0C31E /* WeekendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekendViewController.h; sourceTree = "<group>"; };
 		3804909C1D2329C300A0C31E /* WeekendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekendViewController.m; sourceTree = "<group>"; };
@@ -107,8 +107,8 @@
 				38A7D0AF1D54F09900FF1CAC /* WindowController.h */,
 				38A7D0B01D54F09900FF1CAC /* WindowController.m */,
 				380490A51D2407CF00A0C31E /* ViewControllers */,
-				380490931D2320A500A0C31E /* DayController.h */,
-				380490941D2320A500A0C31E /* DayController.m */,
+				380490931D2320A500A0C31E /* EventStateController.h */,
+				380490941D2320A500A0C31E /* EventStateController.m */,
 				380490881D231FD000A0C31E /* Assets.xcassets */,
 				380490961D2328CE00A0C31E /* Main.storyboard */,
 				380490821D231FD000A0C31E /* Supporting Files */,
@@ -263,7 +263,7 @@
 			files = (
 				3804909D1D2329C300A0C31E /* WeekendViewController.m in Sources */,
 				38A7D0B11D54F09900FF1CAC /* WindowController.m in Sources */,
-				380490951D2320A500A0C31E /* DayController.m in Sources */,
+				380490951D2320A500A0C31E /* EventStateController.m in Sources */,
 				380490871D231FD000A0C31E /* VrijdagViewController.m in Sources */,
 				380490A31D23D5B000A0C31E /* ZeventienUurViewController.m in Sources */,
 				380490841D231FD000A0C31E /* main.m in Sources */,
