@@ -1,0 +1,99 @@
+/* Class = "NSMenuItem"; title = "Finally it is"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Is het al";
+
+/* Class = "NSMenuItem"; title = "Quit Finally it is"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit Is het al";
+
+/* Class = "NSMenuItem"; title = "About Finally it is"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About Is het al";
+
+/* Class = "NSViewController"; title = "weekend"; ObjectID = "9gH-5U-9YG"; */
+"9gH-5U-9YG.title" = "weekend?";
+
+/* Class = "NSTabViewItem"; label = "weekend"; ObjectID = "ALT-pO-KZp"; */
+"ALT-pO-KZp.label" = "weekend";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Preferences…";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "Finally it is Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Is het al Help";
+
+/* Class = "NSTextFieldCell"; title = "Hallo"; ObjectID = "HzI-8Z-U42"; */
+"HzI-8Z-U42.title" = "Hallo";
+
+/* Class = "NSWindow"; title = "Finally it is"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Is het al";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show Alles";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Alles naar voorgrond";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Minimalizeer";
+
+/* Class = "NSMenuItem"; title = "Hide Finally it is"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Verberg Is het al";
+
+/* Class = "NSMenuItem"; title = "My iOS Apps"; ObjectID = "PmW-GU-EYg"; */
+"PmW-GU-EYg.title" = "Mijn iOS Apps";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Zoom";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Venster";
+
+/* Class = "NSMenuItem"; title = "Send Feedback"; ObjectID = "TpZ-Kp-qUf"; */
+"TpZ-Kp-qUf.title" = "Stuur Feedback";
+
+/* Class = "NSTextFieldCell"; title = "Hallo"; ObjectID = "U5W-Sa-IoX"; */
+"U5W-Sa-IoX.title" = "Hallo";
+
+/* Class = "NSTabViewItem"; label = "5 pm"; ObjectID = "UXE-4v-dqB"; */
+"UXE-4v-dqB.label" = "17 uur?";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Verberg anderen";
+
+/* Class = "NSViewController"; title = "Friday"; ObjectID = "XfG-lQ-9wD"; */
+"XfG-lQ-9wD.title" = "vrijdag?";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSViewController"; title = "Finally it is"; ObjectID = "gBV-qv-oro"; */
+"gBV-qv-oro.title" = "Is het al";
+
+/* Class = "NSTabViewItem"; label = "Friday"; ObjectID = "gN9-kZ-xeD"; */
+"gN9-kZ-xeD.label" = "vrijdag";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSTextFieldCell"; title = "Hallo"; ObjectID = "iDV-Ey-Qz3"; */
+"iDV-Ey-Qz3.title" = "Hallo";
+
+/* Class = "NSMenuItem"; title = "My OS X Apps"; ObjectID = "oCb-10-H46"; */
+"oCb-10-H46.title" = "Mijn OS X Apps";
+
+/* Class = "NSMenu"; title = "Finally it is"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Is het al";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";
+
+/* Class = "NSViewController"; title = "5 pm"; ObjectID = "yCh-Iw-WOa"; */
+"yCh-Iw-WOa.title" = "17 uur?";
+

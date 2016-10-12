@@ -19,6 +19,7 @@
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     self.window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
+    self.window.title = NSLocalizedString(@"Finally it is", @"Finally it is");
 }
 
 @end

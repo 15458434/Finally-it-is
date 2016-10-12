@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "DebugLog.h"
+
 @interface AppDelegate () <NSSharingServiceDelegate>
 
 @end
@@ -47,7 +49,7 @@
     NSSharingService *service = [NSSharingService sharingServiceNamed:NSSharingServiceNameComposeEmail];
     service.delegate = self;
     service.recipients = @[@"support@markcornelisse.nl"];
-    service.subject = [ NSString stringWithFormat:@"Feedback voor Is het al"];
+    service.subject = NSLocalizedString(@"Feedback on Finally it is", @"Subject of the email send by the user to give feedback on Finally it its");
     NSString *body = @"Dear Mark, \n\n";
     NSArray *shareItems = @[body];
     [service performWithItems:shareItems];
@@ -86,12 +88,12 @@
 
 - (void)sharingService:(NSSharingService *)sharingService didShareItems:(NSArray *)items
 {
-    NSLog(@"Sharing succesful");
+    DebugLog(@"Sharing succesful");
 }
 
 - (void)sharingService:(NSSharingService *)sharingService didFailToShareItems:(NSArray *)items error:(NSError *)error
 {
-    NSLog(@"Sharing failed: %@", [error localizedDescription]);
+    DebugLog(@"Sharing failed: %@", [error localizedDescription]);
     NSAlert *alert = [NSAlert alertWithError:error];
     [alert runModal];
 }
