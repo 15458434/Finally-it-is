@@ -520,7 +520,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.greenhair.Is-het-alTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Is het al.app/Contents/MacOS/Is het al";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finally it is.app/Contents/MacOS/Finally it is";
 			};
 			name = Debug;
 		};
@@ -538,7 +538,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.greenhair.Is-het-alTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Is het al.app/Contents/MacOS/Is het al";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finally it is.app/Contents/MacOS/Finally it is";
 			};
 			name = Release;
 		};
