@@ -145,14 +145,14 @@
         <scene sceneID="VOr-Zy-oAc">
             <objects>
                 <viewController title="Finally it is" id="gBV-qv-oro" customClass="ContainerViewController" sceneMemberID="viewController">
-                    <view key="view" id="lRZ-dl-lvX">
+                    <view key="view" wantsLayer="YES" id="lRZ-dl-lvX">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <visualEffectView wantsLayer="YES" appearanceType="vibrantLight" blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="dqY-6f-9Wc">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <subviews>
-                                    <containerView translatesAutoresizingMaskIntoConstraints="NO" id="qLE-Tl-KS7">
+                                    <containerView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qLE-Tl-KS7">
                                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                         <connections>
                                             <segue destination="sxJ-JQ-M7V" kind="embed" id="upS-nh-NqH"/>
@@ -191,7 +191,7 @@
                         <tabViewItem label="Friday" id="gN9-kZ-xeD"/>
                         <tabViewItem label="weekend" id="ALT-pO-KZp"/>
                     </tabViewItems>
-                    <tabView key="tabView" type="noTabsNoBorder" id="bLv-cp-dio">
+                    <tabView key="tabView" wantsLayer="YES" type="noTabsNoBorder" id="bLv-cp-dio">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>

@@ -119,8 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				386B1C361DB5398B007A43BE /* Finally it is.entitlements */,
-				386B1C351DB537CA007A43BE /* InfoPlist.strings */,
-				386B1C301DB537C9007A43BE /* Localizable.strings */,
 				38BF85F61DB535E00056BE0F /* AppDelegate.h */,
 				38BF85F71DB535E00056BE0F /* AppDelegate.m */,
 				38BF860C1DB536020056BE0F /* WindowController.h */,
@@ -147,6 +145,8 @@
 		38BF85D51DB5356F0056BE0F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				386B1C351DB537CA007A43BE /* InfoPlist.strings */,
+				386B1C301DB537C9007A43BE /* Localizable.strings */,
 				38BF85D61DB5356F0056BE0F /* main.m */,
 			);
 			name = "Supporting Files";
