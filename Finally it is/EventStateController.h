@@ -19,6 +19,7 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
 - (instancetype)initWithType:(DayControllerType)type;
 
 @property (nonatomic, readonly) BOOL isHetAl;
+@property (nonatomic, readonly) NSString *isHetAlString;
 @property (nonatomic, readonly) NSDate *nextChange;
 
 - (NSDate *)nextChangeFromDate:(NSDate *)date;

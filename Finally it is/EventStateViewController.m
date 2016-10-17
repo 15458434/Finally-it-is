@@ -22,11 +22,10 @@
     BOOL isHetAl = _dayController.isHetAl;
     if (isHetAl) {
         _isHetAlLabel.textColor = [NSColor greenColor];
-        _isHetAlLabel.stringValue = NSLocalizedString(@"Yes", @"Yes");
     } else {
         _isHetAlLabel.textColor = [NSColor redColor];
-        _isHetAlLabel.stringValue = NSLocalizedString(@"No", @"No");
     }
+    _isHetAlLabel.stringValue = _dayController.isHetAlString;
 }
 
 - (void)updateOnAllNextChangeEvents

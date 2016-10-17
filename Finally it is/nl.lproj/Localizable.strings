@@ -1,8 +1,20 @@
+/* 5 pm */
+"5 pm" = "5 uur";
+
 /* Subject of the email send by the user to give feedback on Finally it its */
 "Feedback on Finally it is" = "Feedback voor Is het al";
 
+/* Finally it is */
+"Finally it is" = "Is het al";
+
+/* Friday */
+"Friday" = "Vrijdag";
+
 /* No */
 "No" = "Nee";
+
+/* Weekend */
+"Weekend" = "Weekend";
 
 /* Yes */
 "Yes" = "Ja";

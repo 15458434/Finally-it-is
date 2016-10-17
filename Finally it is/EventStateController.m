@@ -27,6 +27,14 @@
     }
 }
 
+- (NSString *)isHetAlString {
+    if (self.isHetAl) {
+        return NSLocalizedString(@"Yes", @"Yes");
+    } else {
+        return NSLocalizedString(@"No", @"No");
+    }
+}
+
 - (NSDate *)nextChange {
     return [self nextChangeFromDate:[NSDate date]];
 }

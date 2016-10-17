@@ -1,30 +1,28 @@
 //
-//  ZeventienUurViewController.m
+//  WeekendViewController.m
 //  Is het al vrijdag?
 //
-//  Created by Mark Cornelisse on 29/06/16.
+//  Created by Mark Cornelisse on 28/06/16.
 //  Copyright © 2016 Over de muur producties. All rights reserved.
 //
 
-#import "ZeventienUurViewController.h"
+#import "WeekendViewController.h"
 #import "EventStateController.h"
 
-@interface ZeventienUurViewController ()
+@interface WeekendViewController ()
 
 @end
 
-@implementation ZeventienUurViewController
-
-#pragma mark - New in this class
+@implementation WeekendViewController
 
 - (void)createUserActivity
 {
     NSOperatingSystemVersion elCapitan = (NSOperatingSystemVersion){10, 11, 0};
     if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:elCapitan]) {
         NSUserActivity *activity = [[NSUserActivity alloc] initWithActivityType:@"com.greenhair.ishetal.observe"];
-        activity.title = @"Is het al Zeventien uur";
-        activity.keywords = [NSSet setWithArray:@[@"is", @"het", @"al", @"zeventien", @"vijf", @"uur"]];
-        activity.userInfo = @{@"state" : self.isHetAlLabel.stringValue};
+        activity.title = @"Is het al weekend";
+        activity.keywords = [NSSet setWithArray:@[@"is", @"het", @"al", @"weekend"]];
+        activity.userInfo = @{@"state": self.isHetAlLabel.stringValue};
         activity.eligibleForHandoff = NO;
         activity.eligibleForSearch = YES;
         activity.eligibleForPublicIndexing = YES;
@@ -33,12 +31,13 @@
 }
 
 #pragma mark - NSViewController
-
-- (void)viewDidLoad {
+    
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view.
-    self.dayController = [[EventStateController alloc] initWithType:DayControllerTypeSeventeenHour];
+    self.dayController = [[EventStateController alloc] initWithType:DayControllerTypeWeekend];
+    self.title = NSLocalizedString(@"Weekend", @"Weekend");
 }
 
 - (void)viewWillAppear

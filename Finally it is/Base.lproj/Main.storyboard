@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2548a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
         <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
@@ -184,7 +185,7 @@
         <!--Tab View Controller-->
         <scene sceneID="Yvw-oj-WLa">
             <objects>
-                <tabViewController selectedTabViewItemIndex="0" id="sxJ-JQ-M7V" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="sxJ-JQ-M7V" customClass="TabViewController" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="5 pm" id="UXE-4v-dqB"/>
                         <tabViewItem label="Friday" id="gN9-kZ-xeD"/>
@@ -218,9 +219,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <subviews>
                                     <textField canDrawConcurrently="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5DL-Aa-JqI">
-                                        <rect key="frame" x="185" y="137" width="82" height="38"/>
+                                        <rect key="frame" x="182" y="136" width="86" height="40"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hallo" id="iDV-Ey-Qz3">
-                                            <font key="font" metaFont="systemSemibold" size="31"/>
+                                            <font key="font" metaFont="systemSemibold" size="33"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -266,9 +267,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <subviews>
                                     <textField canDrawConcurrently="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jkx-7c-8oV">
-                                        <rect key="frame" x="184" y="137" width="82" height="38"/>
+                                        <rect key="frame" x="182" y="136" width="86" height="40"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hallo" id="HzI-8Z-U42">
-                                            <font key="font" metaFont="systemSemibold" size="31"/>
+                                            <font key="font" metaFont="systemSemibold" size="33"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -314,9 +315,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <subviews>
                                     <textField canDrawConcurrently="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Vu-V0-76T">
-                                        <rect key="frame" x="184" y="137" width="82" height="38"/>
+                                        <rect key="frame" x="183" y="136" width="86" height="40"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hallo" id="U5W-Sa-IoX">
-                                            <font key="font" metaFont="systemSemibold" size="31"/>
+                                            <font key="font" metaFont="systemSemibold" size="33"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
