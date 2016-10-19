@@ -7,7 +7,7 @@
 //
 
 @import XCTest;
-#include "EventStateController.h"
+#import "EventStateController.h"
 
 @interface SeventeenHourDayControllerTests : XCTestCase
 
