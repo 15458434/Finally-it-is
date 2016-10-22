@@ -48,6 +48,16 @@ NSString * const kIdentifiersControllerDefaultArrayOfNotificationIdentifiers = @
     [_mutableIdentifiers addObject:identifier];
 }
 
+- (BOOL)isIdentifierPresent:(NSString *)identifier {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF in %@", identifier];
+    NSSet *filteredSet = [_mutableIdentifiers filteredSetUsingPredicate:predicate];
+    if (filteredSet.count == 1) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
 - (void)removeIdentifier:(NSString *)identifier {
     NSString *identifierObjectItself = [self filterIdenfifierFromSet:identifier];
     [_mutableIdentifiers removeObject:identifierObjectItself];

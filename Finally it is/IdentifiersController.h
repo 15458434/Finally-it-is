@@ -36,6 +36,15 @@ extern NSString * const kIdentifiersControllerDefaultArrayOfNotificationIdentifi
 - (void)addIdentifier:(NSString *)identifier;
 
 /**
+ Checks to see if given identifier is present in the controller.
+
+ @param identifier The identifier you're search for.
+
+ @return Returns YES is if identifier present and NO when it isn't.
+ */
+- (BOOL)isIdentifierPresent:(NSString *)identifier;
+
+/**
  Remove the identifier from the controller.
 
  @param identifier The identifier to be removed from the controller.

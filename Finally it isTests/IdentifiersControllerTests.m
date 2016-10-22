@@ -175,4 +175,14 @@
     XCTAssertEqual(arrayWithOnlyFifth.count, 1, @"There should only be one value containing the fifth identifier.");
 }
 
+- (void)testIsIdentifierPresent {
+    [self preloadAllIdentifiers];
+    
+    BOOL isPresent = [_iController isIdentifierPresent:_thirdCopy];
+    XCTAssertTrue(isPresent == YES, @"third identifier should be present.");
+    [_iController removeIdentifier:_thirdCopy];
+    BOOL isNotPresent = [_iController isIdentifierPresent:_thirdCopy];
+    XCTAssertFalse(isNotPresent == YES, @"third identifier should not be present.");
+}
+
 @end
