@@ -6,7 +6,7 @@
 //  Copyright © 2016 Mark Cornelisse. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import Cocoa;
 
 @interface TabViewController : NSTabViewController
 
