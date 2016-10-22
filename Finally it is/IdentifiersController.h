@@ -19,6 +19,14 @@ extern NSString * const kIdentifiersControllerDefaultArrayOfNotificationIdentifi
  */
 @property (nonatomic, strong, readonly, nonnull) NSArray<NSString *> *identifiers;
 
+/**
+ Generates a UUID identifier with a prefix.
+
+ @param prefix Prefix string attached to the UUIDString
+
+ @return NSString consisting of prefix plus the generated UUIDString.
+ */
++ (NSString *)identifierWithPrefix:(NSString *)prefix;
 
 /**
  Add an identifier to the controller.

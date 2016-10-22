@@ -39,6 +39,11 @@ NSString * const kIdentifiersControllerDefaultArrayOfNotificationIdentifiers = @
     return filteredSet.anyObject;
 }
 
++ (NSString *)identifierWithPrefix:(NSString *)prefix {
+    NSString *uuidString = [[NSUUID UUID] UUIDString];
+    return [prefix stringByAppendingString:uuidString];
+}
+
 - (void)addIdentifier:(NSString *)identifier {
     [_mutableIdentifiers addObject:identifier];
 }
