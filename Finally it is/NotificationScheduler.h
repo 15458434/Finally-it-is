@@ -2,13 +2,24 @@
 //  NotificationScheduler.h
 //  Finally it is
 //
-//  Created by Mark Cornelisse on 17/10/2016.
+//  Created by Mark Cornelisse on 20/10/2016.
 //  Copyright © 2016 Mark Cornelisse. All rights reserved.
 //
 
 @import Foundation;
 
-extern NSString * scheduleLocalNotificationWithTimeInterval(NSTimeInterval interval, NSString *title, NSString *informativeText);
-extern NSString * scheduleLocalNotificationOnDate(NSDate *deliveryDate, NSString *title, NSString *informativeText);
-extern void removeScheduledLocalNotification(NSString *identifier);
-extern void removeAllDeliveredLocalNotifications();
+@interface NotificationScheduler : NSObject
+
++ (instancetype)sharedScheduler;
+
+- (NSString *)scheduleLocalNotificationWithTimeInterval:(NSTimeInterval)timeInterval withTitle:(NSString *)title andText:(NSString *)informativeText;
+- (NSString *)scheduleLocalNotificationOnDate:(NSDate *)deliveryDate withTitle:(NSString *)title andText:(NSString *)informativeText;
+- (void)removeScheduledNotificationWithIdentifier:(NSString *)identifier;
+- (void)removeDeliveredNotificationWithIdentifier:(NSString *)identifier;
+- (void)removeAllDeliveredLocalNotifications;
+
+#pragma mark - NSObject
+
+- (instancetype)init NS_UNAVAILABLE;
+
+@end

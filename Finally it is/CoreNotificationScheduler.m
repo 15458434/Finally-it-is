@@ -41,6 +41,15 @@ void removeScheduledLocalNotification(NSString *identifier)
     [center removeScheduledNotification:notification];
 }
 
+void removeDeliveredLocalNoticication(NSString *identifier)
+{
+    NSUserNotification *notification = [[NSUserNotification alloc] init];
+    notification.identifier = identifier;
+    
+    NSUserNotificationCenter *center = [NSUserNotificationCenter defaultUserNotificationCenter];
+    [center removeDeliveredNotification:notification];
+}
+
 void removeAllDeliveredLocalNotifications()
 {
     [[NSUserNotificationCenter defaultUserNotificationCenter] removeAllDeliveredNotifications];

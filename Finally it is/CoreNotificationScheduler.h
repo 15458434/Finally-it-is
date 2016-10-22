@@ -20,4 +20,5 @@
 extern NSString * scheduleLocalNotificationWithTimeInterval(NSTimeInterval interval, NSString *title, NSString *informativeText);
 extern NSString * scheduleLocalNotificationOnDate(NSDate *deliveryDate, NSString *title, NSString *informativeText);
 extern void removeScheduledLocalNotification(NSString *identifier);
+extern void removeDeliveredLocalNoticication(NSString *identifier);
 extern void removeAllDeliveredLocalNotifications();
