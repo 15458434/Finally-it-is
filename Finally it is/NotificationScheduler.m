@@ -115,7 +115,7 @@
 {
     DebugLog(@"userNotificationCenter:didActivateNotification");
     
-    [self removeDeliveredNotificationWithIdentifier:notification.identifier];
+    [self removeDeliveredNotification:notification];
 }
 
 #pragma mark - NSObject
