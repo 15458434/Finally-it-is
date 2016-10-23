@@ -7,13 +7,17 @@
 //
 
 #import "ZeventienUurViewController.h"
+
 #import "EventStateController.h"
+#import "NotificationScheduler+EventStateController.h"
 
 @interface ZeventienUurViewController ()
 
 @end
 
 @implementation ZeventienUurViewController
+
+
 
 #pragma mark - New in this class
 
@@ -30,6 +34,25 @@
         activity.eligibleForPublicIndexing = YES;
         self.userActivity = activity;
     }
+}
+
+#pragma mark - EventStateViewController
+
+- (void)updateNow
+{
+    NSDate *nextChangeDate = self.dayController.nextChange;
+    NSString *title = NSLocalizedString(@"Finally it is 5 pm", @"Message to the user that it is finally 5 pm.");
+    NSString *informativeText = NSLocalizedString(@"Have a wonderful evening doing the stuff you love to do!", @"Wishing the user a happy evening");
+    NSString *notificationIdentifier = [self.notificationScheduler notificationIdentifierForNotificationSourceType:NotificationSourceTypeSeventeenHundredHours];
+    
+    [super updateNow];
+    
+    BOOL isAllreadyScheduled = [self.notificationScheduler isNotificationScheduledForNotificationSourceType:NotificationSourceTypeSeventeenHundredHours];
+    if (isAllreadyScheduled || self.dayController.isHetAl) {
+        return;
+    }
+    
+    [self.notificationScheduler scheduleLocalNotificationOnDate:nextChangeDate withTitle:title andText:informativeText withIdentifier:notificationIdentifier];
 }
 
 #pragma mark - NSViewController

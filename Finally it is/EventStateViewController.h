@@ -9,12 +9,14 @@
 @import Cocoa;
 
 @class EventStateController;
+@class NotificationScheduler;
 
 @interface EventStateViewController : NSViewController
 
 @property (weak) IBOutlet NSTextField *isHetAlLabel;
 
 @property (strong) EventStateController *dayController;
+@property (readonly) NotificationScheduler *notificationScheduler;
 
 - (void)updateNow;
 - (void)updateOnAllNextChangeEvents;

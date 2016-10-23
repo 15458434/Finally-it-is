@@ -7,7 +7,9 @@
 //
 
 #import "WeekendViewController.h"
+
 #import "EventStateController.h"
+#import "NotificationScheduler+EventStateController.h"
 
 @interface WeekendViewController ()
 
@@ -28,6 +30,25 @@
         activity.eligibleForPublicIndexing = YES;
         self.userActivity = activity;
     }
+}
+
+#pragma mark - EventStateViewController
+
+- (void)updateNow
+{
+    NSDate *nextChangeDate = self.dayController.nextChange;
+    NSString *title = NSLocalizedString(@"Finally it is weekend", @"Message to the user that it is finally weekend.");
+    NSString *informativeText = NSLocalizedString(@"Have a wonderful weekend and don't care about your work!", @"Wishing the user a wonderful weekend.");
+    NSString *notificationIdentifier = [self.notificationScheduler notificationIdentifierForNotificationSourceType:NotificationSourceTypeWeekend];
+    
+    [super updateNow];
+    
+    BOOL isAllreadyScheduled = [self.notificationScheduler isNotificationScheduledForNotificationSourceType:NotificationSourceTypeWeekend];
+    if (isAllreadyScheduled || self.dayController.isHetAl) {
+        return;
+    }
+    
+    [self.notificationScheduler scheduleLocalNotificationOnDate:nextChangeDate withTitle:title andText:informativeText withIdentifier:notificationIdentifier];
 }
 
 #pragma mark - NSViewController

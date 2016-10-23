@@ -9,6 +9,8 @@
 #import "EventStateViewController.h"
 #import "EventStateController+EventChangeHandling.h"
 
+#import "NotificationScheduler+EventStateController.h"
+
 #import "DebugLog.h"
 
 @interface EventStateViewController ()
@@ -34,6 +36,13 @@
     [self.dayController executeOnStateChange:^{
         [weakSelf updateNow];
     }];
+}
+
+#pragma mark - Getters
+
+- (NotificationScheduler *)notificationScheduler
+{
+    return [NotificationScheduler sharedScheduler];
 }
 
 #pragma mark - NSNotification
