@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) NSString *userNotificationIdentifier;
 
 - (NSDate *)nextChangeFromDate:(NSDate *)date;
-- (void)scheduleANotificationOnNextChange;
+- (void)scheduleANotificationOnNextChange __deprecated;
 
 @end
 

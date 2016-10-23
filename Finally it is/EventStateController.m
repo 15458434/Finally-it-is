@@ -8,7 +8,7 @@
 
 #import "EventStateController.h"
 
-#import "NotificationScheduler.h"
+#import "NotificationScheduler+EventStateController.h"
 
 @interface EventStateController ()
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3821821B1DBCC06A00E55598 /* NotificationScheduler+EventStateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821821A1DBCC06A00E55598 /* NotificationScheduler+EventStateController.m */; };
 		386B1C221DB536F9007A43BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C211DB536F9007A43BE /* Assets.xcassets */; };
 		386B1C231DB5373C007A43BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C251DB5373C007A43BE /* Main.storyboard */; };
 		386B1C291DB537C9007A43BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C2B1DB537C9007A43BE /* InfoPlist.strings */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		382182191DBCC06A00E55598 /* NotificationScheduler+EventStateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NotificationScheduler+EventStateController.h"; sourceTree = "<group>"; };
+		3821821A1DBCC06A00E55598 /* NotificationScheduler+EventStateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NotificationScheduler+EventStateController.m"; sourceTree = "<group>"; };
 		386B1C211DB536F9007A43BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		386B1C241DB5373C007A43BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		386B1C261DB5374E007A43BE /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				38BF85FE1DB535EC0056BE0F /* EventStateController.m */,
 				38BF85FF1DB535EC0056BE0F /* EventStateController+EventChangeHandling.h */,
 				38BF86001DB535EC0056BE0F /* EventStateController+EventChangeHandling.m */,
+				382182191DBCC06A00E55598 /* NotificationScheduler+EventStateController.h */,
+				3821821A1DBCC06A00E55598 /* NotificationScheduler+EventStateController.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				38BF86111DB536020056BE0F /* WeekendViewController.m in Sources */,
 				38BF86031DB535EC0056BE0F /* ContainerViewController.m in Sources */,
 				38BF86061DB535EC0056BE0F /* EventStateController+EventChangeHandling.m in Sources */,
+				3821821B1DBCC06A00E55598 /* NotificationScheduler+EventStateController.m in Sources */,
 				38BF86051DB535EC0056BE0F /* EventStateController.m in Sources */,
 				38BF86131DB536020056BE0F /* ZeventienUurViewController.m in Sources */,
 			);
