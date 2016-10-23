@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "NotificationScheduler.h"
+
 #import "DebugLog.h"
 
 @interface AppDelegate () <NSSharingServiceDelegate>
@@ -82,6 +84,8 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+    
+    [[NotificationScheduler sharedScheduler] removeAllDeliveredLocalNotifications];
 }
 
 #pragma mark - NSSharedServicesDelegate

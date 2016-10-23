@@ -60,6 +60,4 @@ typedef NS_ENUM(NSUInteger, NotificationSourceType) {
  */
 - (NSUInteger)notificationDeliveredCountForNotificationSourceType:(NotificationSourceType)type;
 
-
-
 @end
