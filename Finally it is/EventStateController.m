@@ -8,6 +8,12 @@
 
 #import "EventStateController.h"
 
+#import "NotificationScheduler.h"
+
+@interface EventStateController ()
+
+@end
+
 @implementation EventStateController
 
 - (instancetype)initWithType:(DayControllerType)type
@@ -42,6 +48,10 @@
 - (NSDate *)nextChangeFromDate:(NSDate *)date {
     [NSException raise:NSInternalInconsistencyException format:@"nextChangeFromDate should be implemented in a subclass"];
     return nil;
+}
+
+- (void)scheduleANotificationOnNextChange {
+    [NSException raise:NSInternalInconsistencyException format:@"scheduleANotificationOnNextChange should be implemented in a subclass"];
 }
 
 @end
@@ -94,6 +104,20 @@
     }
 }
 
+- (void)scheduleANotificationOnNextChange
+{
+    NSDate *nextChangeDate = self.nextChange;
+    BOOL currentValue = [self isHetAl];
+    
+    NSString *title;
+    NSString *informativeText;
+    if (!currentValue) {
+        title = NSLocalizedString(@"Finally it is 5 pm", @"Message to the user that it is finally 5 pm.");
+        informativeText = NSLocalizedString(@"Have a wonderful evening doing the stuff you love to do!", @"Wishing the user a happy evening");
+        [[NotificationScheduler sharedScheduler] scheduleLocalNotificationOnDate:nextChangeDate withTitle:title andText:informativeText withIdentifier:@"5 pm notification"];
+    }
+}
+
 @end
 
 #pragma mark - FridayDayController
@@ -133,6 +157,20 @@
     }
 }
 
+- (void)scheduleANotificationOnNextChange
+{
+    NSDate *nextChangeDate = self.nextChange;
+    BOOL currentValue = [self isHetAl];
+    
+    NSString *title;
+    NSString *informativeText;
+    if (!currentValue) {
+        title = NSLocalizedString(@"Finally it is Friday", @"Message to the user that it is finally Friday.");
+        informativeText = NSLocalizedString(@"You're almost there", @"Encouragement to make through the Friday.");
+        [[NotificationScheduler sharedScheduler] scheduleLocalNotificationOnDate:nextChangeDate withTitle:title andText:informativeText withIdentifier:@"Friday notification"];
+    }
+}
+
 @end
 
 #pragma mark - WeekendDayController
@@ -169,6 +207,20 @@
         nextYesComponents.weekday = 2;
         nextYesComponents.hour = 0;
         return [calendar nextDateAfterDate:date matchingComponents:nextYesComponents options:NSCalendarMatchNextTime];
+    }
+}
+
+- (void)scheduleANotificationOnNextChange
+{
+    NSDate *nextChangeDate = self.nextChange;
+    BOOL currentValue = [self isHetAl];
+    
+    NSString *title;
+    NSString *informativeText;
+    if (!currentValue) {
+        title = NSLocalizedString(@"Finally it is weekend", @"Message to the user that it is finally weekend.");
+        informativeText = NSLocalizedString(@"Have a wonderful weekend and don't care about your work!", @"Wishing the user a wonderful weekend.");
+        [[NotificationScheduler sharedScheduler] scheduleLocalNotificationOnDate:nextChangeDate withTitle:title andText:informativeText withIdentifier:@"weekend notification"];
     }
 }
 

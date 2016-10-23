@@ -10,10 +10,15 @@
 
 @interface NotificationScheduler : NSObject
 
+@property (nonatomic, strong, readonly) NSArray *scheduledNotifications;
+@property (nonatomic, strong, readonly) NSArray *deliveredNotifications;
+
 + (instancetype)sharedScheduler;
 
-- (NSString *)scheduleLocalNotificationWithTimeInterval:(NSTimeInterval)timeInterval withTitle:(NSString *)title andText:(NSString *)informativeText;
-- (NSString *)scheduleLocalNotificationOnDate:(NSDate *)deliveryDate withTitle:(NSString *)title andText:(NSString *)informativeText;
+- (void)scheduleLocalNotificationOnDate:(NSDate *)deliveryDate withTitle:(NSString *)title andText:(NSString *)informativeText withIdentifier:(NSString *)identifier;
+
+- (BOOL)isPresentInScheduledNotificationWithIdentifier:(NSString *)identifier;
+
 - (void)removeScheduledNotificationWithIdentifier:(NSString *)identifier;
 - (void)removeDeliveredNotificationWithIdentifier:(NSString *)identifier;
 - (void)removeAllDeliveredLocalNotifications;

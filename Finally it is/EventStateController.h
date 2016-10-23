@@ -14,6 +14,8 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
     DayControllerTypeWeekend
 };
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface EventStateController : NSObject
 
 - (instancetype)initWithType:(DayControllerType)type;
@@ -21,8 +23,10 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
 @property (nonatomic, readonly) BOOL isHetAl;
 @property (nonatomic, readonly) NSString *isHetAlString;
 @property (nonatomic, readonly) NSDate *nextChange;
+@property (nonatomic, strong, nullable) NSString *userNotificationIdentifier;
 
 - (NSDate *)nextChangeFromDate:(NSDate *)date;
+- (void)scheduleANotificationOnNextChange;
 
 @end
 
@@ -49,3 +53,5 @@ typedef NS_ENUM(NSUInteger, DayControllerType) {
 - (instancetype)initWithType:(DayControllerType)type NS_UNAVAILABLE;
 
 @end
+
+NS_ASSUME_NONNULL_END

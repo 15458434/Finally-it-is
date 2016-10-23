@@ -16,8 +16,6 @@
 
 @interface NotificationScheduler () <NSUserNotificationCenterDelegate>
 
-@property (nonatomic, strong) IdentifiersController *identifiersController;
-
 @end
 
 @implementation NotificationScheduler
@@ -32,35 +30,81 @@
     return sharedInstance;
 }
 
-- (NSString *)scheduleLocalNotificationWithTimeInterval:(NSTimeInterval)timeInterval withTitle:(NSString *)title andText:(NSString *)informativeText
+- (void)scheduleLocalNotificationOnDate:(NSDate *)deliveryDate withTitle:(NSString *)title andText:(NSString *)informativeText withIdentifier:(NSString *)identifier
 {
-    NSString *identifier = scheduleLocalNotificationWithTimeInterval(timeInterval, title, informativeText);
-    [_identifiersController addIdentifier:identifier];
-    return identifier;
+    NSUserNotification *notification = [[NSUserNotification alloc] init];
+    notification.identifier = identifier;
+    notification.title = title;
+    notification.informativeText = informativeText;
+    notification.deliveryDate = deliveryDate;
+    notification.soundName = NSUserNotificationDefaultSoundName;
+    
+    NSUserNotificationCenter *center = [NSUserNotificationCenter defaultUserNotificationCenter];
+    [center scheduleNotification:notification];
 }
 
-- (NSString *)scheduleLocalNotificationOnDate:(NSDate *)deliveryDate withTitle:(NSString *)title andText:(NSString *)informativeText
+- (BOOL)isPresentInScheduledNotificationWithIdentifier:(NSString *)identifier
 {
-    NSString *identifier = scheduleLocalNotificationOnDate(deliveryDate, title, informativeText);
-    [_identifiersController addIdentifier:identifier];
-    return identifier;
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"identifier is %@", identifier];
+    NSArray *resultsFromScheduledNotifications = [[self scheduledNotifications] filteredArrayUsingPredicate:predicate];
+    if (resultsFromScheduledNotifications.count > 0) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 - (void)removeScheduledNotificationWithIdentifier:(NSString *)identifier
 {
-    removeScheduledLocalNotification(identifier);
-    [_identifiersController removeIdentifier:identifier];
+    NSUserNotification *notification = [[NSUserNotification alloc] init];
+    notification.identifier = identifier;
+    
+    [self removeScheduledNotification:notification];
+}
+
+/**
+ Removes scheduled notification from [NSUserNotificationCenter defaultUserNotificationCenter]
+
+ @param notification NSUserNotification to be removed from scheduledNotifications. (The check is based on notification identifier?)
+ */
+- (void)removeScheduledNotification:(NSUserNotification *)notification
+{
+    NSUserNotificationCenter *center = [NSUserNotificationCenter defaultUserNotificationCenter];
+    [center removeScheduledNotification:notification];
 }
 
 - (void)removeDeliveredNotificationWithIdentifier:(NSString *)identifier
 {
-    removeDeliveredLocalNoticication(identifier);
-    [_identifiersController removeIdentifier:identifier];
+    NSUserNotification *notification = [[NSUserNotification alloc] init];
+    notification.identifier = identifier;
+    
+    [self removeDeliveredNotification:notification];
+}
+
+/**
+ Removes delivered notification from [NSUserNotificationCenter defaultNotificationCenter]
+
+ @param notification Notification to be removed from delivered notifications. (The check is based on notification identifier?)
+ */
+- (void)removeDeliveredNotification:(NSUserNotification *)notification
+{
+    NSUserNotificationCenter *center = [NSUserNotificationCenter defaultUserNotificationCenter];
+    [center removeDeliveredNotification:notification];
 }
 
 - (void)removeAllDeliveredLocalNotifications
 {
-    removeAllDeliveredLocalNotifications();
+    [[NSUserNotificationCenter defaultUserNotificationCenter] removeAllDeliveredNotifications];
+}
+
+#pragma mark - Getters 
+
+- (NSArray *)scheduledNotifications {
+    return [[NSUserNotificationCenter defaultUserNotificationCenter] scheduledNotifications];
+}
+
+- (NSArray *)deliveredNotifications {
+    return [[NSUserNotificationCenter defaultUserNotificationCenter] deliveredNotifications];
 }
 
 #pragma mark - NSUserNotificatoinCenterDelegate
@@ -74,20 +118,7 @@
 {
     DebugLog(@"userNotificationCenter:didActivateNotification");
     
-    removeDeliveredLocalNoticication(notification.identifier);
-    [_identifiersController removeIdentifier:notification.identifier];
-    [_identifiersController saveToDefaults];
-}
-
-- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification
-{
-    DebugLog(@"userNotificationCenter:shouldPresentNotification");
-    
-    BOOL identifierIsPresent = [_identifiersController isIdentifierPresent:notification.identifier];
-    if (identifierIsPresent == NO) {
-        return identifierIsPresent;
-    }
-    return YES;
+    [self removeDeliveredNotificationWithIdentifier:notification.identifier];
 }
 
 #pragma mark - NSObject
@@ -97,7 +128,6 @@
     self = [super init];
     if (self) {
         [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
-        _identifiersController = [[IdentifiersController alloc] init];
     }
     return self;
 }
