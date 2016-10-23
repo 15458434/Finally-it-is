@@ -15,8 +15,9 @@
  - NotificationSourceTypeFridday:               FridayDayController
  - NotificationSourceTypeWeekend:               WeekendDayController
  */
-typedef NS_ENUM(NSUInteger, NotificationSourceType) {
-    NotificationSourceTypeSeventeenHundredHours,
+typedef NS_ENUM(NSInteger, NotificationSourceType) {
+    NotificationSourceTypeInvalid,
+    NotificationSourceTypeSeventeenHundredHours = 0,
     NotificationSourceTypeFridday,
     NotificationSourceTypeWeekend
 };
@@ -59,5 +60,7 @@ typedef NS_ENUM(NSUInteger, NotificationSourceType) {
  @return The amount of delivered notification of a given EventStateControllerType.
  */
 - (NSUInteger)notificationDeliveredCountForNotificationSourceType:(NotificationSourceType)type;
+
++ (NotificationSourceType)typeOfIdentifier:(NSString *)identifier;
 
 @end

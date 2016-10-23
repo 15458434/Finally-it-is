@@ -8,19 +8,23 @@
 
 #import "NotificationScheduler+EventStateController.h"
 
+NSString * const NotificationSourceTypeSeventeenHundredHoursPrefixString = @"000-";
+NSString * const NotificationSourceTypeFridayPrefixString = @"001-";
+NSString * const NotificationSourceTypeWeekendPrefixString = @"002-";
+
 @implementation NotificationScheduler (EventStateController)
 
 - (NSString *)notificationIdentifierPrefixForNotificationSourceType:(NotificationSourceType)type
 {
     switch (type) {
         case NotificationSourceTypeSeventeenHundredHours:
-            return @"000-";
+            return NotificationSourceTypeSeventeenHundredHoursPrefixString;
             break;
         case NotificationSourceTypeFridday:
-            return @"001-";
+            return NotificationSourceTypeFridayPrefixString;
             break;
         case NotificationSourceTypeWeekend:
-            return @"002-";
+            return NotificationSourceTypeWeekendPrefixString;
             break;
         default:
             return nil;
@@ -54,6 +58,20 @@
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"identifier BEGINSWITH %@", prefix];
     NSArray *filteredResults = [[self deliveredNotifications] filteredArrayUsingPredicate:predicate];
     return filteredResults.count;
+}
+
++ (NotificationSourceType)typeOfIdentifier:(NSString *)identifier
+{
+    if ([identifier hasPrefix:NotificationSourceTypeSeventeenHundredHoursPrefixString]) {
+        return NotificationSourceTypeSeventeenHundredHours;
+    } else if ([identifier hasPrefix:NotificationSourceTypeFridayPrefixString]) {
+        return NotificationSourceTypeFridday;
+    } else if ([identifier hasPrefix:NotificationSourceTypeWeekendPrefixString]) {
+        return NotificationSourceTypeWeekend;
+    } else {
+        [NSException raise:NSInternalInconsistencyException format:@"Identifier doesn't contain a valid prefix."];
+        return NotificationSourceTypeInvalid;
+    }
 }
 
 @end
