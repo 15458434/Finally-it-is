@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		382182121DBB2F0600E55598 /* IdentifiersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382182111DBB2F0600E55598 /* IdentifiersController.m */; };
-		382182141DBB355A00E55598 /* IdentifiersControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 382182131DBB355A00E55598 /* IdentifiersControllerTests.m */; };
 		386B1C221DB536F9007A43BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C211DB536F9007A43BE /* Assets.xcassets */; };
 		386B1C231DB5373C007A43BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C251DB5373C007A43BE /* Main.storyboard */; };
 		386B1C291DB537C9007A43BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C2B1DB537C9007A43BE /* InfoPlist.strings */; };
@@ -43,9 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		382182101DBB2F0600E55598 /* IdentifiersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifiersController.h; sourceTree = "<group>"; };
-		382182111DBB2F0600E55598 /* IdentifiersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentifiersController.m; sourceTree = "<group>"; };
-		382182131DBB355A00E55598 /* IdentifiersControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentifiersControllerTests.m; sourceTree = "<group>"; };
 		386B1C211DB536F9007A43BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		386B1C241DB5373C007A43BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		386B1C261DB5374E007A43BE /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
@@ -108,8 +103,6 @@
 		382182151DBB597600E55598 /* NotificationScheduler */ = {
 			isa = PBXGroup;
 			children = (
-				382182101DBB2F0600E55598 /* IdentifiersController.h */,
-				382182111DBB2F0600E55598 /* IdentifiersController.m */,
 				38ED84BE1DB8C804004C7CAF /* NotificationScheduler.h */,
 				38ED84BF1DB8C804004C7CAF /* NotificationScheduler.m */,
 			);
@@ -195,7 +188,6 @@
 				38BF86151DB536480056BE0F /* FridayDayControllerTests.m */,
 				38BF86161DB536480056BE0F /* SeventeenHourDayControllerTests.m */,
 				38BF86171DB536480056BE0F /* WeekendDayControllerTests.m */,
-				382182131DBB355A00E55598 /* IdentifiersControllerTests.m */,
 				38BF85EB1DB5356F0056BE0F /* Info.plist */,
 			);
 			path = "Finally it isTests";
@@ -334,7 +326,6 @@
 				38BF86071DB535EC0056BE0F /* EventStateViewController.m in Sources */,
 				38BF86041DB535EC0056BE0F /* DebugLog.m in Sources */,
 				38BF86121DB536020056BE0F /* WindowController.m in Sources */,
-				382182121DBB2F0600E55598 /* IdentifiersController.m in Sources */,
 				38ED84C01DB8C804004C7CAF /* NotificationScheduler.m in Sources */,
 				38BF86111DB536020056BE0F /* WeekendViewController.m in Sources */,
 				38BF86031DB535EC0056BE0F /* ContainerViewController.m in Sources */,
@@ -350,7 +341,6 @@
 			files = (
 				38BF86191DB536480056BE0F /* SeventeenHourDayControllerTests.m in Sources */,
 				38BF861A1DB536480056BE0F /* WeekendDayControllerTests.m in Sources */,
-				382182141DBB355A00E55598 /* IdentifiersControllerTests.m in Sources */,
 				38BF86181DB536480056BE0F /* FridayDayControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
