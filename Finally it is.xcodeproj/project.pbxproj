@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3805E7DE1DB814B30015AF45 /* NotificationSchedulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3805E7DD1DB814B30015AF45 /* NotificationSchedulerTests.m */; };
+		382182121DBB2F0600E55598 /* IdentifiersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382182111DBB2F0600E55598 /* IdentifiersController.m */; };
+		382182141DBB355A00E55598 /* IdentifiersControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 382182131DBB355A00E55598 /* IdentifiersControllerTests.m */; };
 		386B1C221DB536F9007A43BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C211DB536F9007A43BE /* Assets.xcassets */; };
 		386B1C231DB5373C007A43BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C251DB5373C007A43BE /* Main.storyboard */; };
 		386B1C291DB537C9007A43BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C2B1DB537C9007A43BE /* InfoPlist.strings */; };
 		386B1C2E1DB537C9007A43BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C301DB537C9007A43BE /* Localizable.strings */; };
 		386B1C331DB537CA007A43BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C351DB537CA007A43BE /* InfoPlist.strings */; };
 		386B1C391DB53CB4007A43BE /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386B1C381DB53CB4007A43BE /* TabViewController.m */; };
-		38A216671DB5426800BF9870 /* NotificationScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A216661DB5426800BF9870 /* NotificationScheduler.m */; };
 		38BF85D71DB5356F0056BE0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BF85D61DB5356F0056BE0F /* main.m */; };
 		38BF85F81DB535E00056BE0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BF85F71DB535E00056BE0F /* AppDelegate.m */; };
 		38BF86031DB535EC0056BE0F /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BF85FA1DB535EC0056BE0F /* ContainerViewController.m */; };
@@ -29,6 +29,7 @@
 		38BF86181DB536480056BE0F /* FridayDayControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BF86151DB536480056BE0F /* FridayDayControllerTests.m */; };
 		38BF86191DB536480056BE0F /* SeventeenHourDayControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BF86161DB536480056BE0F /* SeventeenHourDayControllerTests.m */; };
 		38BF861A1DB536480056BE0F /* WeekendDayControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BF86171DB536480056BE0F /* WeekendDayControllerTests.m */; };
+		38ED84C01DB8C804004C7CAF /* NotificationScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ED84BF1DB8C804004C7CAF /* NotificationScheduler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3805E7DD1DB814B30015AF45 /* NotificationSchedulerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationSchedulerTests.m; sourceTree = "<group>"; };
+		382182101DBB2F0600E55598 /* IdentifiersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifiersController.h; sourceTree = "<group>"; };
+		382182111DBB2F0600E55598 /* IdentifiersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentifiersController.m; sourceTree = "<group>"; };
+		382182131DBB355A00E55598 /* IdentifiersControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentifiersControllerTests.m; sourceTree = "<group>"; };
 		386B1C211DB536F9007A43BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		386B1C241DB5373C007A43BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		386B1C261DB5374E007A43BE /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
@@ -52,8 +55,6 @@
 		386B1C361DB5398B007A43BE /* Finally it is.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Finally it is.entitlements"; sourceTree = "<group>"; };
 		386B1C371DB53CB4007A43BE /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
 		386B1C381DB53CB4007A43BE /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
-		38A216651DB5425800BF9870 /* NotificationScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationScheduler.h; sourceTree = "<group>"; };
-		38A216661DB5426800BF9870 /* NotificationScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationScheduler.m; sourceTree = "<group>"; };
 		38BF85CF1DB5356F0056BE0F /* Finally it is.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finally it is.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BF85D61DB5356F0056BE0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38BF85E01DB5356F0056BE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +83,8 @@
 		38BF86151DB536480056BE0F /* FridayDayControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FridayDayControllerTests.m; sourceTree = "<group>"; };
 		38BF86161DB536480056BE0F /* SeventeenHourDayControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeventeenHourDayControllerTests.m; sourceTree = "<group>"; };
 		38BF86171DB536480056BE0F /* WeekendDayControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekendDayControllerTests.m; sourceTree = "<group>"; };
+		38ED84BE1DB8C804004C7CAF /* NotificationScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationScheduler.h; sourceTree = "<group>"; };
+		38ED84BF1DB8C804004C7CAF /* NotificationScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationScheduler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		382182151DBB597600E55598 /* NotificationScheduler */ = {
+			isa = PBXGroup;
+			children = (
+				382182101DBB2F0600E55598 /* IdentifiersController.h */,
+				382182111DBB2F0600E55598 /* IdentifiersController.m */,
+				38ED84BE1DB8C804004C7CAF /* NotificationScheduler.h */,
+				38ED84BF1DB8C804004C7CAF /* NotificationScheduler.m */,
+			);
+			name = NotificationScheduler;
+			sourceTree = "<group>";
+		};
 		38A216631DB541BD00BF9870 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +123,6 @@
 				38BF85FE1DB535EC0056BE0F /* EventStateController.m */,
 				38BF85FF1DB535EC0056BE0F /* EventStateController+EventChangeHandling.h */,
 				38BF86001DB535EC0056BE0F /* EventStateController+EventChangeHandling.m */,
-				38A216651DB5425800BF9870 /* NotificationScheduler.h */,
-				38A216661DB5426800BF9870 /* NotificationScheduler.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -157,6 +169,7 @@
 				38BF86141DB536230056BE0F /* EventStateViewController */,
 				38A216641DB541C900BF9870 /* Debug Helpers */,
 				38A216631DB541BD00BF9870 /* Model */,
+				382182151DBB597600E55598 /* NotificationScheduler */,
 				386B1C251DB5373C007A43BE /* Main.storyboard */,
 				386B1C211DB536F9007A43BE /* Assets.xcassets */,
 				38BF85E01DB5356F0056BE0F /* Info.plist */,
@@ -182,7 +195,7 @@
 				38BF86151DB536480056BE0F /* FridayDayControllerTests.m */,
 				38BF86161DB536480056BE0F /* SeventeenHourDayControllerTests.m */,
 				38BF86171DB536480056BE0F /* WeekendDayControllerTests.m */,
-				3805E7DD1DB814B30015AF45 /* NotificationSchedulerTests.m */,
+				382182131DBB355A00E55598 /* IdentifiersControllerTests.m */,
 				38BF85EB1DB5356F0056BE0F /* Info.plist */,
 			);
 			path = "Finally it isTests";
@@ -314,7 +327,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A216671DB5426800BF9870 /* NotificationScheduler.m in Sources */,
 				386B1C391DB53CB4007A43BE /* TabViewController.m in Sources */,
 				38BF86101DB536020056BE0F /* VrijdagViewController.m in Sources */,
 				38BF85F81DB535E00056BE0F /* AppDelegate.m in Sources */,
@@ -322,6 +334,8 @@
 				38BF86071DB535EC0056BE0F /* EventStateViewController.m in Sources */,
 				38BF86041DB535EC0056BE0F /* DebugLog.m in Sources */,
 				38BF86121DB536020056BE0F /* WindowController.m in Sources */,
+				382182121DBB2F0600E55598 /* IdentifiersController.m in Sources */,
+				38ED84C01DB8C804004C7CAF /* NotificationScheduler.m in Sources */,
 				38BF86111DB536020056BE0F /* WeekendViewController.m in Sources */,
 				38BF86031DB535EC0056BE0F /* ContainerViewController.m in Sources */,
 				38BF86061DB535EC0056BE0F /* EventStateController+EventChangeHandling.m in Sources */,
@@ -334,9 +348,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3805E7DE1DB814B30015AF45 /* NotificationSchedulerTests.m in Sources */,
 				38BF86191DB536480056BE0F /* SeventeenHourDayControllerTests.m in Sources */,
 				38BF861A1DB536480056BE0F /* WeekendDayControllerTests.m in Sources */,
+				382182141DBB355A00E55598 /* IdentifiersControllerTests.m in Sources */,
 				38BF86181DB536480056BE0F /* FridayDayControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
