@@ -7,8 +7,23 @@
 /* Finally it is */
 "Finally it is" = "Is het al";
 
+/* Message to the user that it is finally 5 pm. */
+"Finally it is 5 pm" = "Het is eindelijk 5 uur";
+
+/* Message to the user that it is finally Friday. */
+"Finally it is Friday" = "Het is eindelijk vrijdag";
+
+/* Message to the user that it is finally weekend. */
+"Finally it is weekend" = "Het is eindelijk weekend";
+
 /* Friday */
 "Friday" = "Vrijdag";
+
+/* Wishing the user a happy evening */
+"Have a wonderful evening doing the stuff you love to do!" = "Heb een leuke avond met datgene wat je leuk vind om te doen";
+
+/* Wishing the user a wonderful weekend. */
+"Have a wonderful weekend and don't care about your work!" = "Heb een fijn weekend en je hoeft je niet druk te maken om je werk";
 
 /* No */
 "No" = "Nee";
@@ -18,4 +33,7 @@
 
 /* Yes */
 "Yes" = "Ja";
+
+/* Encouragement to make through the Friday. */
+"You're almost there" = "Nog eventjes en dan heb je weekend";
 
