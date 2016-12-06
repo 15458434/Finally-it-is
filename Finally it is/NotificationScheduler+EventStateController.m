@@ -8,6 +8,8 @@
 
 #import "NotificationScheduler+EventStateController.h"
 
+#import "DebugLog.h"
+
 NSString * const NotificationSourceTypeSeventeenHundredHoursPrefixString = @"000-";
 NSString * const NotificationSourceTypeFridayPrefixString = @"001-";
 NSString * const NotificationSourceTypeWeekendPrefixString = @"002-";
@@ -44,9 +46,7 @@ NSString * const NotificationSourceTypeWeekendPrefixString = @"002-";
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"identifier BEGINSWITH %@", prefix];
     NSArray *filteredResults = [[self scheduledNotifications] filteredArrayUsingPredicate:predicate];
-#ifdef DEBUG
-    NSLog(@"filteredResults: %lu", (unsigned long)filteredResults.count);
-#endif
+    DebugLog(@"filteredResuls: %lu", (unsigned long)filteredResults.count);
     if (filteredResults.count > 0) {
         return YES;
     } else {
