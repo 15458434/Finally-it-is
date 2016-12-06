@@ -44,6 +44,9 @@ NSString * const NotificationSourceTypeWeekendPrefixString = @"002-";
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"identifier BEGINSWITH %@", prefix];
     NSArray *filteredResults = [[self scheduledNotifications] filteredArrayUsingPredicate:predicate];
+#ifdef DEBUG
+    NSLog(@"filteredResults: %lu", (unsigned long)filteredResults.count);
+#endif
     if (filteredResults.count > 0) {
         return YES;
     } else {
