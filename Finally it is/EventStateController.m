@@ -86,20 +86,33 @@
         NSDateComponents *nextYesComponents = [[NSDateComponents alloc] init];
         nextYesComponents.weekday = components.weekday;
         nextYesComponents.hour = 17;
-        return [calendar nextDateAfterDate:date matchingComponents:nextYesComponents options:NSCalendarMatchNextTime];
+        NSDate *result = [calendar nextDateAfterDate:date matchingComponents:nextYesComponents options:NSCalendarMatchNextTime];
+        NSParameterAssert(result);
+        return result;
     } else {
         if (components.weekday == 6 && components.hour >= 17) {
             // Vrijdag na vijf uur, dan is maandagochtend om 0:00 uur de volgende.
             NSDateComponents *nextNOComponents = [[NSDateComponents alloc] init];
             nextNOComponents.weekday = 2;
             nextNOComponents.hour = 0;
-            return [calendar nextDateAfterDate:date matchingComponents:nextNOComponents options:NSCalendarMatchNextTime];
+            NSDate *result = [calendar nextDateAfterDate:date matchingComponents:nextNOComponents options:NSCalendarMatchNextTime];
+            NSParameterAssert(result);
+            return result;
+        } else if (components.weekday == 7 || components.weekday == 1) {
+            NSDateComponents *nextNOComponents = [[NSDateComponents alloc] init];
+            nextNOComponents.weekday = 2;
+            nextNOComponents.hour = 0;
+            NSDate *result = [calendar nextDateAfterDate:date matchingComponents:nextNOComponents options:NSCalendarMatchNextTime];
+            NSParameterAssert(result);
+            return result;
         } else {
             // Iedere maandag, dinsdag, woensdag, donderdag na 17:00 is 0:00 de volgende.
             NSDateComponents *nextNOComponents = [[NSDateComponents alloc] init];
             nextNOComponents.weekday = components.weekday + 1;
             nextNOComponents.hour = 0;
-            return [calendar nextDateAfterDate:date matchingComponents:nextNOComponents options:NSCalendarMatchNextTime];
+            NSDate *result = [calendar nextDateAfterDate:date matchingComponents:nextNOComponents options:NSCalendarMatchNextTime];
+            NSParameterAssert(result);
+            return result;
         }
     }
 }

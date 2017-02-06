@@ -44,6 +44,14 @@
     [super updateNow];
     
     BOOL isAllreadyScheduled = [self.notificationScheduler isNotificationScheduledForNotificationSourceType:NotificationSourceTypeWeekend];
+#ifdef DEBUG
+    NSLog(@"********************************************* WeekeendViewController *********************************************");
+    NSLog(@"Current date: %@", [NSDate date]);
+    NSLog(@"isAllReadyScheduled: %@", [NSNumber numberWithBool:isAllreadyScheduled]);
+    NSLog(@"isHetAl: %@", [NSNumber numberWithBool:self.dayController.isHetAl]);
+    NSLog(@"isAllReadyScheduled || isHetAl : %@", [NSNumber numberWithBool:(isAllreadyScheduled || self.dayController.isHetAl)]);
+    NSLog(@"nextChangeDate: %@", nextChangeDate);
+#endif
     if (isAllreadyScheduled || self.dayController.isHetAl) {
         return;
     }

@@ -71,6 +71,21 @@
     components = [_calendar components:_units fromDate:nextSwitchDate];
     XCTAssertEqual(components.weekday, 5, "Should happen on Thursday.");
     XCTAssertEqual(components.hour, 0, "Should happen at midnight.");
+    
+    // Test on a sunday
+    NSDateComponents *sundayComponents = [[NSDateComponents alloc] init];
+    sundayComponents.weekday = 0;
+    sundayComponents.hour = 9;
+    sundayComponents.year = 2017;
+    sundayComponents.weekOfYear = 4;
+    NSDate *sundayDate = [_calendar dateFromComponents:sundayComponents];
+    NSLog(@"sundayDate: %@", sundayDate);
+    NSDate *nextSwitchDateAfterSunday = [_testController nextChangeFromDate:sundayDate];
+    NSLog(@"nextSwitchDateAfterSunday: %@", nextSwitchDateAfterSunday);
+    NSDateComponents *nextSwitchDateAfterSundayComponents = [_calendar components:_units fromDate:nextSwitchDateAfterSunday];
+    NSLog(@"nextSwitchDateAfterSundayComponents: %@", nextSwitchDateAfterSundayComponents);
+    XCTAssertEqual(nextSwitchDateAfterSundayComponents.weekday, 2, "Next switch should be on Saturday.");
+    XCTAssertEqual(nextSwitchDateAfterSundayComponents.hour, 0, "Next switch should be on 0:00 hour.");
 }
 
 @end

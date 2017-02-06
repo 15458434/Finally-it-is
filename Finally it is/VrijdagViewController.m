@@ -30,7 +30,8 @@
         activity.eligibleForHandoff = NO;
         activity.eligibleForSearch = YES;
         activity.eligibleForPublicIndexing = YES;
-        self.userActivity = activity;    }
+        self.userActivity = activity;
+    }
 }
 
 #pragma mark - EventStateViewController
@@ -45,6 +46,14 @@
     [super updateNow];
     
     BOOL isAllreadyScheduled = [self.notificationScheduler isNotificationScheduledForNotificationSourceType:NotificationSourceTypeFridday];
+#ifdef DEBUG
+    NSLog(@"********************************************* VrijdagViewController *********************************************");
+    NSLog(@"Current date: %@", [NSDate date]);
+    NSLog(@"isAllReadyScheduled: %@", [NSNumber numberWithBool:isAllreadyScheduled]);
+    NSLog(@"isHetAl: %@", [NSNumber numberWithBool:self.dayController.isHetAl]);
+    NSLog(@"isAllReadyScheduled || isHetAl : %@", [NSNumber numberWithBool:(isAllreadyScheduled || self.dayController.isHetAl)]);
+    NSLog(@"nextChangeDate: %@", nextChangeDate);
+#endif
     if (isAllreadyScheduled || self.dayController.isHetAl) {
         return;
     }

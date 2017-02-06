@@ -46,8 +46,15 @@
     NSString *notificationIdentifier = [self.notificationScheduler notificationIdentifierForNotificationSourceType:NotificationSourceTypeSeventeenHundredHours];
     
     [super updateNow];
-    
     BOOL isAllreadyScheduled = [self.notificationScheduler isNotificationScheduledForNotificationSourceType:NotificationSourceTypeSeventeenHundredHours];
+#ifdef DEBUG
+    NSLog(@"********************************************* ZeventienUurViewController *********************************************");
+    NSLog(@"Current date: %@", [NSDate date]);
+    NSLog(@"isAllReadyScheduled: %@", [NSNumber numberWithBool:isAllreadyScheduled]);
+    NSLog(@"isHetAl: %@", [NSNumber numberWithBool:self.dayController.isHetAl]);
+    NSLog(@"isAllReadyScheduled || isHetAl : %@", [NSNumber numberWithBool:(isAllreadyScheduled || self.dayController.isHetAl)]);
+    NSLog(@"nextChangeDate: %@", nextChangeDate);
+#endif
     if (isAllreadyScheduled || self.dayController.isHetAl) {
         return;
     }
