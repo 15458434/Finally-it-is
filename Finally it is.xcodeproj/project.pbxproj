@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3821821B1DBCC06A00E55598 /* NotificationScheduler+EventStateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821821A1DBCC06A00E55598 /* NotificationScheduler+EventStateController.m */; };
+		383EE0A7202B154C001FAC30 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 383EE0A6202B154C001FAC30 /* LICENSE */; };
 		386B1C221DB536F9007A43BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C211DB536F9007A43BE /* Assets.xcassets */; };
 		386B1C231DB5373C007A43BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C251DB5373C007A43BE /* Main.storyboard */; };
 		386B1C291DB537C9007A43BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 386B1C2B1DB537C9007A43BE /* InfoPlist.strings */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		382182191DBCC06A00E55598 /* NotificationScheduler+EventStateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NotificationScheduler+EventStateController.h"; sourceTree = "<group>"; };
 		3821821A1DBCC06A00E55598 /* NotificationScheduler+EventStateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NotificationScheduler+EventStateController.m"; sourceTree = "<group>"; };
+		383EE0A6202B154C001FAC30 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		386B1C211DB536F9007A43BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		386B1C241DB5373C007A43BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		386B1C261DB5374E007A43BE /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		38BF85C61DB5356F0056BE0F = {
 			isa = PBXGroup;
 			children = (
+				383EE0A6202B154C001FAC30 /* LICENSE */,
 				38BF85D11DB5356F0056BE0F /* Finally it is */,
 				38BF85E81DB5356F0056BE0F /* Finally it isTests */,
 				38BF85D01DB5356F0056BE0F /* Products */,
@@ -306,6 +309,7 @@
 				386B1C331DB537CA007A43BE /* InfoPlist.strings in Resources */,
 				386B1C2E1DB537C9007A43BE /* Localizable.strings in Resources */,
 				386B1C231DB5373C007A43BE /* Main.storyboard in Resources */,
+				383EE0A7202B154C001FAC30 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
