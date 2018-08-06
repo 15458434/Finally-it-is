@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  Finally it is
+//
+//  Created by Mark Cornelisse on 06/08/2018.
+//  Copyright © 2018 Mark Cornelisse. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Debug Helper
+#import "DebugLog.h"
+
+#endif /* PrefixHeader_pch */

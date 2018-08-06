@@ -8,8 +8,6 @@
 
 #import "NotificationScheduler+EventStateController.h"
 
-#import "DebugLog.h"
-
 NSString * const NotificationSourceTypeSeventeenHundredHoursPrefixString = @"000-";
 NSString * const NotificationSourceTypeFridayPrefixString = @"001-";
 NSString * const NotificationSourceTypeWeekendPrefixString = @"002-";

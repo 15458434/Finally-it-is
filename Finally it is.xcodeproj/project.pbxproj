@@ -83,6 +83,7 @@
 		38BF86151DB536480056BE0F /* FridayDayControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FridayDayControllerTests.m; sourceTree = "<group>"; };
 		38BF86161DB536480056BE0F /* SeventeenHourDayControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeventeenHourDayControllerTests.m; sourceTree = "<group>"; };
 		38BF86171DB536480056BE0F /* WeekendDayControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekendDayControllerTests.m; sourceTree = "<group>"; };
+		38DD17512118EFE400FEA566 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		38ED84BE1DB8C804004C7CAF /* NotificationScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationScheduler.h; sourceTree = "<group>"; };
 		38ED84BF1DB8C804004C7CAF /* NotificationScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationScheduler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +175,7 @@
 				386B1C251DB5373C007A43BE /* Main.storyboard */,
 				386B1C211DB536F9007A43BE /* Assets.xcassets */,
 				38BF85E01DB5356F0056BE0F /* Info.plist */,
+				38DD17512118EFE400FEA566 /* PrefixHeader.pch */,
 				38BF85D51DB5356F0056BE0F /* Supporting Files */,
 			);
 			path = "Finally it is";
@@ -501,6 +503,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z6JP26PUUY;
+				GCC_PREFIX_HEADER = "Finally it is/PrefixHeader.pch";
 				INFOPLIST_FILE = "Finally it is/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -517,6 +520,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z6JP26PUUY;
+				GCC_PREFIX_HEADER = "Finally it is/PrefixHeader.pch";
 				INFOPLIST_FILE = "Finally it is/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;

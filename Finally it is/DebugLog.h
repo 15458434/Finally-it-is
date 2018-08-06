@@ -9,6 +9,8 @@
 #ifndef DebugLog_h
 #define DebugLog_h
 
+@class NSString;
+
 /**
  Logs only when the app is compiled to a debug binary.
 

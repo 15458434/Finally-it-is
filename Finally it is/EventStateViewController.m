@@ -11,8 +11,6 @@
 
 #import "NotificationScheduler+EventStateController.h"
 
-#import "DebugLog.h"
-
 @interface EventStateViewController ()
 
 @end

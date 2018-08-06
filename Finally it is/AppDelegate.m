@@ -10,8 +10,6 @@
 
 #import "NotificationScheduler.h"
 
-#import "DebugLog.h"
-
 @interface AppDelegate () <NSSharingServiceDelegate>
 
 @end

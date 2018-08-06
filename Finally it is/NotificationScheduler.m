@@ -8,9 +8,6 @@
 
 #import "NotificationScheduler.h"
 
-// Debug Helpers
-#import "DebugLog.h"
-
 @interface NotificationScheduler () <NSUserNotificationCenterDelegate>
 
 @end
