@@ -16,7 +16,7 @@
 
 @implementation EventStateController
 
-- (instancetype)initWithType:(DayControllerType)type
+- (__kindof EventStateController *)initWithType:(DayControllerType)type
 {
     switch (type) {
         case DayControllerTypeSeventeenHour:
@@ -28,6 +28,8 @@
         case DayControllerTypeWeekend:
             return [[WeekendDayController alloc] init];
             break;
+        case DayControllerTypeAll:
+            return [[AllDayController alloc] init];
         default:
             break;
     }
@@ -235,6 +237,47 @@
         informativeText = NSLocalizedString(@"Have a wonderful weekend and don't care about your work!", @"Wishing the user a wonderful weekend.");
         [[NotificationScheduler sharedScheduler] scheduleLocalNotificationOnDate:nextChangeDate withTitle:title andText:informativeText withIdentifier:@"weekend notification"];
     }
+}
+
+@end
+
+@interface AllDayController ()
+
+@property (strong, nonatomic) __kindof EventStateController *seventeenHourController;
+@property (strong, nonatomic) __kindof EventStateController *fridayController;
+@property (strong, nonatomic) __kindof EventStateController *weekendController;
+
+@end
+
+@implementation AllDayController
+
+#pragma mark - EventStateController
+
+- (BOOL)isHetAl {
+    return [self.seventeenHourController isHetAl] || [self.fridayController isHetAl] || [self.weekendController isHetAl];
+}
+
+- (NSDate *)nextChangeFromDate:(NSDate *)date {
+    NSDate *nextChangeDateSeventeenhours = [self.seventeenHourController nextChangeFromDate:date];
+    NSDate *nextChangeDateFriday = [self.fridayController nextChangeFromDate:date];
+    NSDate *nextChangeDateWeekend = [self.weekendController nextChangeFromDate:date];
+    
+    NSArray *dates = @[nextChangeDateSeventeenhours, nextChangeDateFriday, nextChangeDateWeekend];
+    NSArray *sortedDates = [dates sortedArrayUsingSelector:@selector(compare:)];
+    return sortedDates.firstObject;
+}
+
+#pragma mark - NSObject
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.seventeenHourController = [[EventStateController alloc] initWithType:DayControllerTypeSeventeenHour];
+        self.fridayController = [[EventStateController alloc] initWithType:DayControllerTypeFriday];
+        self.weekendController = [[EventStateController alloc] initWithType:DayControllerTypeWeekend];
+    }
+    return self;
 }
 
 @end

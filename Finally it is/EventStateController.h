@@ -11,14 +11,15 @@
 typedef NS_ENUM(NSUInteger, DayControllerType) {
     DayControllerTypeSeventeenHour,
     DayControllerTypeFriday,
-    DayControllerTypeWeekend
+    DayControllerTypeWeekend,
+    DayControllerTypeAll
 };
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EventStateController : NSObject
 
-- (instancetype)initWithType:(DayControllerType)type;
+- (__kindof EventStateController *)initWithType:(DayControllerType)type;
 
 @property (nonatomic, readonly) BOOL isHetAl;
 @property (nonatomic, readonly) NSString *isHetAlString;
@@ -49,6 +50,12 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - WeekendDayController
 
 @interface WeekendDayController : EventStateController
+
+- (instancetype)initWithType:(DayControllerType)type NS_UNAVAILABLE;
+
+@end
+
+@interface AllDayController : EventStateController
 
 - (instancetype)initWithType:(DayControllerType)type NS_UNAVAILABLE;
 
